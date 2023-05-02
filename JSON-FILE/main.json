@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "email": "vishanthan@gmail.com",
+      "password": "$2a$10$pM9FhtNLv.pI5u243Nm2xukRRFUrcnRuphZIOkg7HWa0e/Db/lO0m",
+      "username": "vishanthan",
+      "type": "user",
+      "id": 1
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$pM9FhtNLv.pI5u243Nm2xukRRFUrcnRuphZIOkg7HWa0e/Db/lO0m",
+      "username": "admin_1",
+      "type": "admin",
+      "id": 2
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Varisu",
+      "genere":["action","drama"],
+      "year": 2023,
+      "rank": 8567,
+      "cast": "Joseph Vijay, Rashmika Mandanna",
+      "aka": "Varisu (2023) ",
+      "imdb_url": "https://imdb.com/title/tt11998558",
+      "image": "varisu.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Dear Comrade",
+      "genere":["action","drama","romance"],
+      "year": 2019,
+      "rank": 66031,
+      "cast": "Vijay Deverakonda, Rashmika Mandanna",
+      "aka": "Dear Comrade (2019) ",
+      "imdb_url": "https://imdb.com/title/tt8388508",
+      "image": "dear.jpg"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+a{
+    margin: 0 .2rem;
+    text-decoration: none;
+    color: black;
+    background-color: grey;
+}
