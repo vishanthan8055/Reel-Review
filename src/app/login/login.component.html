@@ -1,4 +1,4 @@
-
+<div class="md">
 <div id="login-card" *ngIf="logform">
         <table id="log-table">
              <tr>
@@ -17,7 +17,7 @@
              <tr>
                  
                  <td colspan=2 
-                     style="text-align:center; color: pink" (click)="toggle()">Not Registered yet? Click here</td>
+                     style="text-align:center; color: red" (click)="toggle()">Not Registered yet? Click here</td>
              </tr>
         </table>
         <div class="loading" *ngIf="status"><img src="http://localhost/images/loading.gif"></div>
@@ -60,3 +60,4 @@
             <div class="loading" *ngIf="status"><img src="http://localhost/images/loading.gif"></div>
             <div class="errors">{{rerror}}</div>
     </div>
+</div>

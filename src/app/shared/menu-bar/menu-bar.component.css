@@ -5,5 +5,16 @@ a{
     margin: 0 .2rem;
     text-decoration: none;
     color: black;
-    background-color: grey;
+    /* background-color: grey; */
+    transition: .2s;
 }
+
+.hero{
+  background:none;
+  color: black;
+  cursor: pointer;
+}
+
+
+/* ------ */
+

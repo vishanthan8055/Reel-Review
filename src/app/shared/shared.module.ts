@@ -3,17 +3,22 @@ import { CommonModule } from '@angular/common';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { MaterialModule } from '../material/material.module';
 import { HttpClientModule } from '@angular/common/http';
+import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 
 
 @NgModule({
   declarations: [
-    MenuBarComponent
+    MenuBarComponent,
+    SearchBarComponent
   ],
   imports: [
     CommonModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:[MenuBarComponent]
 })

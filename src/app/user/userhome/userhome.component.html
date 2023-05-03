@@ -1,3 +1,23 @@
+<div class="sb">
+<form class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label class="sr"><img  src="http://localhost/movies/search.png" alt=""></mat-label>
+      <input matInput
+             aria-label="State"
+             [matAutocomplete]="auto"
+             [formControl]="stateCtrl"
+             [(ngModel)]="name">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
+          <img alt="" class="example-option-img" [src]="state.flag" height="25">
+          <span>{{state.name}}</span> |
+          <small>Population: {{state.population}}</small>
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>
+  <button (click)="onSearch()" class="btn btn-dark">search</button>
+  </div>
 <div class="cont">
-<app-moviebox *ngFor="let x of movies" [movie]="x"></app-moviebox>
+<app-moviebox *ngFor="let x of movies|searchp:nameS" [movie]="x"></app-moviebox>
 </div>

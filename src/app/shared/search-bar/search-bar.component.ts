@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable, map, startWith } from 'rxjs';
-import { MovieService } from 'src/app/shared/services/movie.service';
+import { MovieService } from '../services/movie.service';
 
 export interface State {
   flag: string;
@@ -10,12 +10,12 @@ export interface State {
 }
 
 @Component({
-  selector: 'app-userhome',
-  templateUrl: './userhome.component.html',
-  styleUrls: ['./userhome.component.css']
+  selector: 'app-search-bar',
+  templateUrl: './search-bar.component.html',
+  styleUrls: ['./search-bar.component.css']
 })
-export class UserhomeComponent {
-  name="";
+export class SearchBarComponent {
+name="";
   nameS="";
   stateCtrl = new FormControl('');
   filteredStates: Observable<State[]> | undefined;
@@ -23,7 +23,8 @@ export class UserhomeComponent {
     
   ];
   movies:any;
-  constructor(private ms:MovieService) {
+
+    constructor(private ms:MovieService) {
     this.ms.getMovies().subscribe( {
       next: (data:any)=>{this.movies = data;
         this.movies=data;
@@ -55,11 +56,4 @@ export class UserhomeComponent {
 
     return this.states.filter(state => state.name.toLowerCase().includes(filterValue));
   }
-  // ngOnInit(): void {
-  //   this.ms.getMovies().subscribe( {
-  //     next: (data:any)=>this.movies = data,
-  //     error: ()=> this.movies = []
-  //    }
-  //    )
-  // }
 }

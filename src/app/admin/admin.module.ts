@@ -4,7 +4,10 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { SharedModule } from '../shared/shared.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AmovieboxComponent } from './adminhome/amoviebox/amoviebox.component';
+import { MaterialModule } from '../material/material.module';
+import { SearchaPipe } from '../pipes/searcha.pipe';
 
 
 const route:Routes=[
@@ -23,13 +26,18 @@ const route:Routes=[
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    AdminhomeComponent,
+    AmovieboxComponent,
+    SearchaPipe,
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(route),
     SharedModule,
-    FormsModule
+    FormsModule,
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class AdminModule { }

@@ -18,5 +18,8 @@ export class MovieService {
    getMovies():Observable<any>{
     return this.http.get("http://localhost:3000/660/movies",this.httpOptions);
   }
+  deleteMovies(id:number):Observable<any>{
+    return this.http.delete("http://localhost:3000/660/movies/"+id,this.httpOptions);
+  }
 
 }

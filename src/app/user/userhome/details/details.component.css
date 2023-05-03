@@ -1,0 +1,28 @@
+.ban{
+    margin: 2rem 5rem;
+}
+.tp{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rgt{
+    display: flex;
+}
+.rat{
+    margin: 0 1rem;
+    text-align: center;
+}
+.grat{
+    margin: 0 1rem;
+    text-align: center;
+}
+.ib img{
+    height: 600px;
+    width: 400px;
+}
+.mid{
+    display: flex;
+    gap: 1rem;
+}

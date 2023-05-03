@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { RouterModule,Routes } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { UserhomeComponent } from './userhome/userhome.component';
 import { MovieboxComponent } from './userhome/moviebox/moviebox.component';
 import { MaterialModule } from '../material/material.module';
+import { DetailsComponent } from './userhome/details/details.component';
+import { SearchpPipe } from '../pipes/searchp.pipe';
 
 const route:Routes=[
 
@@ -17,7 +19,12 @@ const route:Routes=[
     {
       path: "",
       component: UserhomeComponent
-    }
+    },
+    {
+    path:"details", 
+    component:DetailsComponent
+  }  
+
   ]
 }
 
@@ -27,14 +34,17 @@ const route:Routes=[
   declarations: [
     HomeComponent,
     UserhomeComponent,
-    MovieboxComponent
+    MovieboxComponent,
+    DetailsComponent,
+    SearchpPipe
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(route),
     FormsModule,
     MaterialModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ]
 })
 export class UserModule { }

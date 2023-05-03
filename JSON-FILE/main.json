@@ -19,10 +19,17 @@
     {
       "id": 1,
       "title": "Varisu",
-      "genere":["action","drama"],
+      "genere": [
+        "action",
+        "drama"
+      ],
+      "description": "Vijay Rajendran is a happy to-go lucky man. Things change when his father becomes terminally ill, and he is left to manage his business empire.",
       "year": 2023,
+      "imdb_rating": 6.5,
       "rank": 8567,
       "cast": "Joseph Vijay, Rashmika Mandanna",
+      "directors": "Vamshi Paidipally",
+      "writers": "Vamshi Paidipally, Hari, Ahishor Solomon",
       "aka": "Varisu (2023) ",
       "imdb_url": "https://imdb.com/title/tt11998558",
       "image": "varisu.jpg"
@@ -30,10 +37,130 @@
     {
       "id": 2,
       "title": "Dear Comrade",
-      "genere":["action","drama","romance"],
+      "genere": [
+        "action",
+        "drama",
+        "romance"
+      ],
+      "description": "A hot-blooded student union leader falls for a state-level cricketer but his anger management issues and violent streak threatens to derail their love story.",
       "year": 2019,
+      "imdb_rating": 8,
       "rank": 66031,
       "cast": "Vijay Deverakonda, Rashmika Mandanna",
+      "directors": "Bharat Kamma",
+      "writers": "Bharat Kamma, Jay Krishna, Gautam Siddharth",
+      "aka": "Dear Comrade (2019) ",
+      "imdb_url": "https://imdb.com/title/tt8388508",
+      "image": "dear.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Avengers: Endgame",
+      "genere": [
+        "action",
+        "drama",
+        "adventure"
+      ],
+      "description": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+      "year": 2019,
+      "imdb_rating": 8.5,
+      "rank": 336,
+      "cast": "Robert Downey Jr., Chris Evans",
+      "directors": "Anthony RussoJoe Russo",
+      "writers": "Christopher Markus, Stephen McFeely, Stan Lee",
+      "aka": "Avengers: Endgame (2019) ",
+      "imdb_url": "https://imdb.com/title/tt4154796",
+      "image": "avengers.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Varisu",
+      "genere": [
+        "action",
+        "drama"
+      ],
+      "description": "Vijay Rajendran is a happy to-go lucky man. Things change when his father becomes terminally ill, and he is left to manage his business empire.",
+      "year": 2023,
+      "imdb_rating": 6.5,
+      "rank": 8567,
+      "cast": "Joseph Vijay, Rashmika Mandanna",
+      "directors": "Vamshi Paidipally",
+      "writers": "Vamshi Paidipally, Hari, Ahishor Solomon",
+      "aka": "Varisu (2023) ",
+      "imdb_url": "https://imdb.com/title/tt11998558",
+      "image": "varisu.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Dear Comrade",
+      "genere": [
+        "action",
+        "drama",
+        "romance"
+      ],
+      "description": "A hot-blooded student union leader falls for a state-level cricketer but his anger management issues and violent streak threatens to derail their love story.",
+      "year": 2019,
+      "imdb_rating": 8,
+      "rank": 66031,
+      "cast": "Vijay Deverakonda, Rashmika Mandanna",
+      "directors": "Bharat Kamma",
+      "writers": "Bharat Kamma, Jay Krishna, Gautam Siddharth",
+      "aka": "Dear Comrade (2019) ",
+      "imdb_url": "https://imdb.com/title/tt8388508",
+      "image": "dear.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Avengers: Endgame",
+      "genere": [
+        "action",
+        "drama",
+        "adventure"
+      ],
+      "description": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+      "year": 2019,
+      "imdb_rating": 8.5,
+      "rank": 336,
+      "cast": "Robert Downey Jr., Chris Evans",
+      "directors": "Anthony RussoJoe Russo",
+      "writers": "Christopher Markus, Stephen McFeely, Stan Lee",
+      "aka": "Avengers: Endgame (2019) ",
+      "imdb_url": "https://imdb.com/title/tt4154796",
+      "image": "avengers.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Varisu",
+      "genere": [
+        "action",
+        "drama"
+      ],
+      "description": "Vijay Rajendran is a happy to-go lucky man. Things change when his father becomes terminally ill, and he is left to manage his business empire.",
+      "year": 2023,
+      "imdb_rating": 6.5,
+      "rank": 8567,
+      "cast": "Joseph Vijay, Rashmika Mandanna",
+      "directors": "Vamshi Paidipally",
+      "writers": "Vamshi Paidipally, Hari, Ahishor Solomon",
+      "aka": "Varisu (2023) ",
+      "imdb_url": "https://imdb.com/title/tt11998558",
+      "image": "varisu.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Dear Comrade",
+      "genere": [
+        "action",
+        "drama",
+        "romance"
+      ],
+      "description": "A hot-blooded student union leader falls for a state-level cricketer but his anger management issues and violent streak threatens to derail their love story.",
+      "year": 2019,
+      "imdb_rating": 8,
+      "rank": 66031,
+      "cast": "Vijay Deverakonda, Rashmika Mandanna",
+      "directors": "Bharat Kamma",
+      "writers": "Bharat Kamma, Jay Krishna, Gautam Siddharth",
       "aka": "Dear Comrade (2019) ",
       "imdb_url": "https://imdb.com/title/tt8388508",
       "image": "dear.jpg"
