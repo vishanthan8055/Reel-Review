@@ -1,0 +1,20 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{movie.title}}</mat-card-title>
+      <mat-card-subtitle *ngFor="let x of movie.genere">{{x}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="cimg" src="http://localhost/movies/{{movie.image}}" alt="">
+    <mat-card-content>
+      <p>
+        
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button style="background-color: black; color: white; margin: 0 .5rem;"
+      (click)="changeRoute()">Details</button>
+      <button mat-button style="background-color: red; color: white; margin: 0 .5rem;"
+      (click)="onRemove()">Remove from favorites</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <!-- <p>{{movie.title}}</p> -->

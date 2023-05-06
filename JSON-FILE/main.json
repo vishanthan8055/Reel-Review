@@ -1,11 +1,131 @@
 {
+  "reviews": [
+    {
+      "id": 1,
+      "username": "vishanthan",
+      "title": "Varisu",
+      "review": "It is a good moview but overrated in tamilnadu"
+    },
+    {
+      "id": 2,
+      "username": "charumathi",
+      "title": "Varisu",
+      "review": "It is not good"
+    },
+    {
+      "id": 3,
+      "username": "charumathi",
+      "title": "Naruto",
+      "review": "It the best Anime"
+    },
+    {
+      "username": "charumathi",
+      "title": "Naruto",
+      "review": "Cool Anime i watched",
+      "id": 4
+    },
+    {
+      "username": "charumathi",
+      "title": "Naruto",
+      "review": "Nice anime",
+      "id": 5
+    },
+    {
+      "username": "charumathi",
+      "title": "Avengers: Endgame",
+      "review": "Great StoryLine",
+      "id": 6
+    },
+    {
+      "username": "vishanthan",
+      "title": "Varisu",
+      "review": "Nice Movie to watch",
+      "id": 7
+    },
+    {
+      "username": "vishanthan",
+      "title": "Varisu",
+      "date": "06/05/2023",
+      "review": "Nice Movie and great climax also sentimental movie",
+      "id": 8
+    },
+    {
+      "username": "vishanthan",
+      "title": "Varisu",
+      "date": "06/05/2023",
+      "id": 9
+    },
+    {
+      "username": "vishanthan",
+      "title": "Avengers: Endgame",
+      "date": "06/05/2023",
+      "review": "nice one but we miss old marvel heros 😢😢😢",
+      "id": 10
+    },
+    {
+      "username": "vishanthan",
+      "title": "Death Note",
+      "date": "06/05/2023",
+      "review": "Great Villainism!!!",
+      "id": 11
+    },
+    {
+      "username": "vishanthan",
+      "title": "Naruto",
+      "date": "06/05/2023",
+      "review": "Yes it is a great anime i have ever watched!!!",
+      "id": 12
+    },
+    {
+      "username": "vishanthan",
+      "title": "Dear Comrade",
+      "date": "06/05/2023",
+      "review": "great love story",
+      "id": 13
+    },
+    {
+      "username": "charumathi",
+      "title": "Varisu",
+      "date": "06/05/2023",
+      "review": "true",
+      "id": 14
+    },
+    {
+      "username": "charumathi",
+      "title": "Dear Comrade",
+      "date": "06/05/2023",
+      "review": "yeah😂😂😂",
+      "id": 15
+    }
+  ],
   "users": [
     {
       "email": "vishanthan@gmail.com",
       "password": "$2a$10$pM9FhtNLv.pI5u243Nm2xukRRFUrcnRuphZIOkg7HWa0e/Db/lO0m",
       "username": "vishanthan",
       "type": "user",
+      "watchlist": [
+        "Naruto",
+        "Dear Comrade",
+        "Varisu",
+        "Avengers: Endgame",
+        "Rithick",
+        "Varisudu"
+      ],
       "id": 1
+    },
+    {
+      "email": "charu@gmail.com",
+      "password": "$2a$10$pM9FhtNLv.pI5u243Nm2xukRRFUrcnRuphZIOkg7HWa0e/Db/lO0m",
+      "username": "charumathi",
+      "type": "user",
+      "watchlist": [
+        "Varisu",
+        "Dear Comrade",
+        "Avengers: Endgame",
+        "Varisudu"
+      ],
+      "id": 3
     },
     {
       "email": "admin@gmail.com",
@@ -13,12 +133,32 @@
       "username": "admin_1",
       "type": "admin",
       "id": 2
+    },
+    {
+      "email": "pppppp@gmail.com",
+      "password": "$2a$10$upCdlOMYMvO2T1/1Dj/IyuobDFLk0XlMinmYqwG5OUu/kvcZXKFX.",
+      "username": "pppppp",
+      "type": "user",
+      "watchlist": [
+        "Varisu",
+        "Dear Comrade",
+        "Avengers: Endgame",
+        "Varisudu"
+      ],
+      "id": 4
+    },
+    {
+      "email": "rrrr@gmail.com",
+      "password": "$2a$10$upCdlOMYMvO2T1/1Dj/IyuobDFLk0XlMinmYqwG5OUu/kvcZXKFX.",
+      "username": "rrrr",
+      "type": "admin",
+      "id": 6
     }
   ],
   "movies": [
     {
-      "id": 1,
       "title": "Varisu",
+      "language": "Tamil",
       "genere": [
         "action",
         "drama"
@@ -32,11 +172,13 @@
       "writers": "Vamshi Paidipally, Hari, Ahishor Solomon",
       "aka": "Varisu (2023) ",
       "imdb_url": "https://imdb.com/title/tt11998558",
-      "image": "varisu.jpg"
+      "image": "varisu.jpg",
+      "id": 1
     },
     {
       "id": 2,
       "title": "Dear Comrade",
+      "language": "Tamil",
       "genere": [
         "action",
         "drama",
@@ -54,8 +196,8 @@
       "image": "dear.jpg"
     },
     {
-      "id": 3,
       "title": "Avengers: Endgame",
+      "language": "Tamil",
       "genere": [
         "action",
         "drama",
@@ -63,21 +205,23 @@
       ],
       "description": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
       "year": 2019,
-      "imdb_rating": 8.5,
+      "imdb_rating": "8.5",
       "rank": 336,
-      "cast": "Robert Downey Jr., Chris Evans",
+      "cast": "Robert Downey Jr., Chris EvanS",
       "directors": "Anthony RussoJoe Russo",
       "writers": "Christopher Markus, Stephen McFeely, Stan Lee",
       "aka": "Avengers: Endgame (2019) ",
       "imdb_url": "https://imdb.com/title/tt4154796",
-      "image": "avengers.jpg"
+      "image": "avengers.jpg",
+      "id": 3
     },
     {
-      "id": 4,
-      "title": "Varisu",
+      "title": "Varisudu",
+      "language": "Tamil",
       "genere": [
         "action",
-        "drama"
+        "drama",
+        ""
       ],
       "description": "Vijay Rajendran is a happy to-go lucky man. Things change when his father becomes terminally ill, and he is left to manage his business empire.",
       "year": 2023,
@@ -88,82 +232,145 @@
       "writers": "Vamshi Paidipally, Hari, Ahishor Solomon",
       "aka": "Varisu (2023) ",
       "imdb_url": "https://imdb.com/title/tt11998558",
-      "image": "varisu.jpg"
+      "image": "varisu.jpg",
+      "id": 7
     },
     {
-      "id": 5,
-      "title": "Dear Comrade",
+      "title": "Death Note",
+      "language": "Tamil",
       "genere": [
-        "action",
-        "drama",
-        "romance"
+        "Animation",
+        "Crime",
+        "",
+        ""
       ],
-      "description": "A hot-blooded student union leader falls for a state-level cricketer but his anger management issues and violent streak threatens to derail their love story.",
-      "year": 2019,
-      "imdb_rating": 8,
-      "rank": 66031,
-      "cast": "Vijay Deverakonda, Rashmika Mandanna",
-      "directors": "Bharat Kamma",
-      "writers": "Bharat Kamma, Jay Krishna, Gautam Siddharth",
-      "aka": "Dear Comrade (2019) ",
-      "imdb_url": "https://imdb.com/title/tt8388508",
-      "image": "dear.jpg"
-    },
-    {
-      "id": 6,
-      "title": "Avengers: Endgame",
-      "genere": [
-        "action",
-        "drama",
-        "adventure"
-      ],
-      "description": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
-      "year": 2019,
-      "imdb_rating": 8.5,
-      "rank": 336,
-      "cast": "Robert Downey Jr., Chris Evans",
-      "directors": "Anthony RussoJoe Russo",
-      "writers": "Christopher Markus, Stephen McFeely, Stan Lee",
-      "aka": "Avengers: Endgame (2019) ",
-      "imdb_url": "https://imdb.com/title/tt4154796",
-      "image": "avengers.jpg"
-    },
-    {
-      "id": 7,
-      "title": "Varisu",
-      "genere": [
-        "action",
-        "drama"
-      ],
-      "description": "Vijay Rajendran is a happy to-go lucky man. Things change when his father becomes terminally ill, and he is left to manage his business empire.",
-      "year": 2023,
-      "imdb_rating": 6.5,
-      "rank": 8567,
-      "cast": "Joseph Vijay, Rashmika Mandanna",
-      "directors": "Vamshi Paidipally",
-      "writers": "Vamshi Paidipally, Hari, Ahishor Solomon",
-      "aka": "Varisu (2023) ",
+      "description": "An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.",
+      "year": "2006",
+      "imdb_rating": "9.2",
+      "rank": "508",
+      "cast": "Mamoru Miyano(Light Yagami), Vincent Tong (Touta Matsuda), Kappei Yamaguchi(L)",
+      "directors": "Adam Wingard",
+      "writers": "Tetsurô Araki (荒木 哲郎, Araki Tetsuro)",
+      "aka": "DeathNote",
       "imdb_url": "https://imdb.com/title/tt11998558",
-      "image": "varisu.jpg"
+      "image": "death.jpg",
+      "id": 9
     },
     {
-      "id": 8,
-      "title": "Dear Comrade",
+      "title": "Attack on Titan",
+      "language": "Tamil",
+      "genere": [
+        "Animation",
+        " Action",
+        ""
+      ],
+      "description": "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
+      "year": "2013",
+      "imdb_rating": "9.1",
+      "rank": "54",
+      "cast": "Josh Grelle(Armin Arlert), Bryce Papenbrook(Eren Jaeger), Yûki Kaji(Eren Yeager), Yui Ishikawa(Mikasa Ackerman)",
+      "directors": "Tetsuro Araki,  Gen Urobuchi ",
+      "writers": "Teruyuki Omine ",
+      "aka": "AOT",
+      "image": "aot.jpg",
+      "id": 10
+    },
+    {
+      "title": "Naruto",
+      "language": "Tamil",
+      "genere": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "description": "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
+      "year": "2002",
+      "imdb_rating": "8.4",
+      "rank": "432",
+      "cast": "Naruto Uzumaki, Itachi uchiha, Sasuke uchiha, Kakashi hatake, shisui uchiha, Kagami uchiha, shikamaru nara, Sakura, Hinata Hyuga, Obito Uchiha, Madara Uchiha, Harshirama senju",
+      "directors": "Masashi Kishimoto",
+      "writers": "Masashi Kishimoto",
+      "aka": "The tale of naruto uzumaki",
+      "imbd_url": "https://www.imdb.com/title/tt0409591/",
+      "image": "naruto.jpg",
+      "id": 11
+    },
+    {
+      "title": "Vishanthan",
+      "language": "Tamil",
+      "genere": [
+        "Action",
+        " adventure"
+      ],
+      "description": "aa bb cc",
+      "year": "2023",
+      "imdb_rating": "10",
+      "rank": "1",
+      "cast": "vishanthan",
+      "directors": "vichu",
+      "writers": "vishanth",
+      "aka": "R.v",
+      "imbd_url": "www.google.com",
+      "image": "varisu.jpg",
+      "id": 12
+    },
+    {
+      "title": "Charumathi",
+      "language": "telugu",
+      "genere": [
+        "Adventure",
+        "",
+        ""
+      ],
+      "description": "aabbbcccc",
+      "year": "2002",
+      "imdb_rating": "10",
+      "rank": "1",
+      "cast": "charu",
+      "directors": "charu",
+      "writers": "charu",
+      "aka": "charu",
+      "imdb_url": "https://imdb.com/title/tt11998558",
+      "image": "death.jpg",
+      "id": 13
+    },
+    {
+      "title": "bot",
+      "language": "japanese",
+      "genere": [
+        "animation",
+        ""
+      ],
+      "description": "aaaaaaannnnn",
+      "year": "2015",
+      "imdb_rating": "10",
+      "rank": "43",
+      "cast": "eren",
+      "directors": "yaeger",
+      "writers": "naruto",
+      "aka": "bott",
+      "imdb_url": "www.instagram.com",
+      "image": "aot.jpg",
+      "id": 14
+    },
+    {
+      "title": "Rithick",
+      "language": "tamil",
       "genere": [
         "action",
-        "drama",
-        "romance"
+        "comedy"
       ],
-      "description": "A hot-blooded student union leader falls for a state-level cricketer but his anger management issues and violent streak threatens to derail their love story.",
-      "year": 2019,
-      "imdb_rating": 8,
-      "rank": 66031,
-      "cast": "Vijay Deverakonda, Rashmika Mandanna",
-      "directors": "Bharat Kamma",
-      "writers": "Bharat Kamma, Jay Krishna, Gautam Siddharth",
-      "aka": "Dear Comrade (2019) ",
-      "imdb_url": "https://imdb.com/title/tt8388508",
-      "image": "dear.jpg"
+      "description": "kjhkjjhlkhjhj",
+      "year": "2002",
+      "imdb_rating": "9.5",
+      "rank": "100",
+      "cast": "rithick",
+      "directors": "rithick",
+      "writers": "vishanthan",
+      "aka": "ritu",
+      "imdb_url": "www.google.com",
+      "image": "naruto.jpg",
+      "id": 15
     }
   ]
 }

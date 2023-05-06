@@ -4,9 +4,10 @@
 a{
     margin: 0 .2rem;
     text-decoration: none;
-    color: black;
+    color: white;
     /* background-color: grey; */
     transition: .2s;
+    cursor: pointer;
 }
 
 .hero{
@@ -14,6 +15,13 @@ a{
   color: black;
   cursor: pointer;
 }
+
+#nv{
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 5rem;
+}
+
 
 
 /* ------ */

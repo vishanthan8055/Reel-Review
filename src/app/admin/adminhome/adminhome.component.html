@@ -1,25 +1,29 @@
 <h1 style="text-align: center;">ADMIN PANEL</h1>
-<div class="sb">
-    <form class="example-form">
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label class="sr"><img  src="http://localhost/movies/search.png" alt=""></mat-label>
-          <input matInput
-                 aria-label="State"
-                 [matAutocomplete]="auto"
-                 [formControl]="stateCtrl"
-                 [(ngModel)]="name">
-          <mat-autocomplete #auto="matAutocomplete">
-            <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
-              <img alt="" class="example-option-img" [src]="state.flag" height="25">
-              <span>{{state.name}}</span> |
-              <small>Population: {{state.population}}</small>
-            </mat-option>
-          </mat-autocomplete>
-        </mat-form-field>
-      </form>
-      <button (click)="onSearch()" class="btn btn-dark">search</button>
-      <!-- <button  class="btn btn-dark"><a routerLink="/addmovie">+Add Movies</a></button> -->
-      </div>
+<div class="md">
+  <div class="sb">
+      <form class="example-form">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label class="sr"><img  src="http://localhost/movies/search.png" alt=""></mat-label>
+            <input matInput
+                  aria-label="State"
+                  [matAutocomplete]="auto"
+                  [formControl]="stateCtrl"
+                  [(ngModel)]="name">
+            <mat-autocomplete #auto="matAutocomplete">
+              <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
+                <img alt="" class="example-option-img" [src]="state.flag" height="25">
+                <span>{{state.name}}</span> 
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </form>
+        <button (click)="onSearch()" class="btn btn-dark">search</button>
+        <!-- <button  class="btn btn-dark"><a routerLink="/addmovie">+Add Movies</a></button> -->
+  </div>
+  <div class="ad">
+    <button class="btn btn-dark"><a (click)="changeRoute()">Add Movie</a></button>
+  </div>
+</div>
 <div class="cont">
     <app-amoviebox *ngFor="let x of movies | searcha:nameS" [movie]="x"></app-amoviebox>
 </div>

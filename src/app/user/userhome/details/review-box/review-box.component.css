@@ -1,0 +1,54 @@
+ .media {
+	border-top:1px dashed #DDDDDD;
+	padding:20px 0;
+	margin:1.5rem 0rem;
+}
+
+ .media > .pull-left {
+    margin-right:20px;
+}
+
+ .media img {
+	width: 5rem ;
+    height: 5rem;
+}
+
+ .media h4 {
+	margin:0 0 10px;
+}
+
+ .media h4 span {
+	font-size:14px;
+	float:right;
+	color:#999999;
+}
+
+ .media p {
+	margin-bottom:15px;
+	text-align:justify;
+}
+
+ .media-detail {
+	margin:0;
+}
+
+ .media-detail li {
+	color:#AAAAAA;
+	font-size:12px;
+	padding-right: 10px;
+	font-weight:600;
+}
+
+ .media-detail a:hover {
+	text-decoration:underline;
+}
+
+ .media-detail li:last-child {
+	padding-right:0;
+}
+
+ .media-detail li i {
+	color:#666666;
+	font-size:15px;
+	margin-right:10px;
+}

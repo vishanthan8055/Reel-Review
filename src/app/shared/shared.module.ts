@@ -5,13 +5,15 @@ import { MaterialModule } from '../material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { ForumComponent } from './forum/forum.component';
 
 
 
 @NgModule({
   declarations: [
     MenuBarComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    ForumComponent
   ],
   imports: [
     CommonModule,
@@ -20,6 +22,6 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  exports:[MenuBarComponent]
+  exports:[MenuBarComponent,ForumComponent]
 })
 export class SharedModule { }

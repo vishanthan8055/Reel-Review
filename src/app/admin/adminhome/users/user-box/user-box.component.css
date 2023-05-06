@@ -1,0 +1,125 @@
+/* .btt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.btt a{
+    padding: .25rem .5rem;
+}
+#hero{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid black;
+    border-radius: 3rem;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+h3 {
+	margin: 10px 0;
+}
+
+h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.card-container {
+	background-color: #2e2c36;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+    min-height: 488px;
+	text-align: center;
+}
+
+.card-container .pro {
+	color: #2e2c36;
+	background-color: #FEBB0B;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.card-container .usr {
+	color: #2e2c36;
+	background-color: #3bb82b;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.card-container .round {
+	border: 1px solid #B3B8CD;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+button.primary {
+	background-color: #B3B8CD;
+	border: none;
+	border-radius: 1rem;
+	color: #231E39;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+    margin: 0rem .5rem;
+}
+
+button.primary.ghost {
+	color: white;
+	background-color: #9c0202;
+}
+
+.skills {
+	background-color: #2e2c36;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid #2e2c36;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+
+
+.round{
+    width: 7rem;
+    height: 7rem;
+    padding: 0;
+}

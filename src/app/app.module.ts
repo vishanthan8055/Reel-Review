@@ -8,13 +8,11 @@ import { MaterialModule } from './material/material.module';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SearchaPipe } from './pipes/searcha.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    SearchaPipe
+    LoginComponent
   ],
   imports: [
     BrowserModule,

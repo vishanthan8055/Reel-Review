@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+
 }
 /*  */
 .example-form {
@@ -32,4 +33,6 @@
   .sb{
     display: flex;
     align-items: center;
+ 
   }
+

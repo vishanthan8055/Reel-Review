@@ -34,3 +34,13 @@
     display: flex;
     align-items: center;
   }
+  .md{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+  }
+  .ad button{
+    padding: .5rem 1rem;
+    margin-bottom: .9rem;
+  }

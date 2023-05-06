@@ -8,6 +8,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AmovieboxComponent } from './adminhome/amoviebox/amoviebox.component';
 import { MaterialModule } from '../material/material.module';
 import { SearchaPipe } from '../pipes/searcha.pipe';
+import { AddmovieComponent } from './adminhome/addmovie/addmovie.component';
+import { EditmovieComponent } from './adminhome/editmovie/editmovie.component';
+import { UsersComponent } from './adminhome/users/users.component';
+import { UserBoxComponent } from './adminhome/users/user-box/user-box.component';
 
 
 const route:Routes=[
@@ -20,7 +24,18 @@ const route:Routes=[
       path: "",
       component: AdminhomeComponent
     },
-    
+    {
+      path: "addmovie",
+      component: AddmovieComponent
+    },
+    {
+      path:"edit", 
+      component:EditmovieComponent
+    },
+    {
+      path:"users", 
+      component:UsersComponent
+    } 
   ]
 }]
 
@@ -30,6 +45,10 @@ const route:Routes=[
     AdminhomeComponent,
     AmovieboxComponent,
     SearchaPipe,
+    AddmovieComponent,
+    EditmovieComponent,
+    UsersComponent,
+    UserBoxComponent,
   ],
   imports: [
     CommonModule,

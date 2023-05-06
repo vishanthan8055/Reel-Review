@@ -9,6 +9,13 @@ import { MovieboxComponent } from './userhome/moviebox/moviebox.component';
 import { MaterialModule } from '../material/material.module';
 import { DetailsComponent } from './userhome/details/details.component';
 import { SearchpPipe } from '../pipes/searchp.pipe';
+import { WatchlistComponent } from './userhome/watchlist/watchlist.component';
+import { WatchlistboxComponent } from './userhome/watchlist/watchlistbox/watchlistbox.component';
+import { FavPipe } from '../pipes/fav.pipe';
+import { ReviewBoxComponent } from './userhome/details/review-box/review-box.component';
+import { RevPipe } from '../pipes/rev.pipe';
+import { ForumComponent } from '../shared/forum/forum.component';
+import { UforumComponent } from './userhome/uforum/uforum.component';
 
 const route:Routes=[
 
@@ -23,6 +30,14 @@ const route:Routes=[
     {
     path:"details", 
     component:DetailsComponent
+  },
+  {
+    path:"favs", 
+    component:WatchlistComponent
+  } ,
+  {
+    path:"forum", 
+    component:UforumComponent
   }  
 
   ]
@@ -36,7 +51,13 @@ const route:Routes=[
     UserhomeComponent,
     MovieboxComponent,
     DetailsComponent,
-    SearchpPipe
+    SearchpPipe,
+    FavPipe,
+    WatchlistComponent,
+    WatchlistboxComponent,
+    ReviewBoxComponent,
+    RevPipe,
+    UforumComponent
   ],
   imports: [
     CommonModule,

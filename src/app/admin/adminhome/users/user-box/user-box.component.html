@@ -1,0 +1,55 @@
+<!-- {
+    "email": "vishanthan@gmail.com",
+    "password": "$2a$10$pM9FhtNLv.pI5u243Nm2xukRRFUrcnRuphZIOkg7HWa0e/Db/lO0m",
+    "username": "vishanthan",
+    "type": "user",
+    "watchlist": [
+      "Naruto",
+      "Dear Comrade",
+      "Varisu",
+      "Avengers: Endgame",
+      "Rithick",
+      "Varisudu"
+    ],
+    "id": 1
+  } -->
+  
+
+  <div class="card-container">
+    <span *ngIf="isA()" class="pro">ADMIN</span>
+    <span *ngIf="!isA()" class="usr">USER</span>
+    <img class="round" src="http://localhost/users/u1.png" alt="user" />
+    <h3>{{user.username}}</h3>
+    <h6>{{user.email}}</h6>
+    <div class="buttons">
+      <button class="primary">
+        Edit
+      </button>
+      <button *ngIf="!isA()" class="primary ghost"
+      (click)="delUser()">
+        Delete
+      </button>
+    </div>
+    <div class="skills">
+      <h6>Watchlist</h6>
+      <ul>
+        <li *ngFor="let u of user.watchlist">{{u}}</li>
+      </ul>
+    </div>
+  </div>
+
+    
+<!-- <div [ngClass]="isAdmin()" style="width: 18rem;">
+    <div class="card-header"><img src="http://localhost/users/u1.png" id="hero">
+      Username: {{user.username}}</div>
+    <div class="card-body">
+      <p class="card-text">Id: {{user.id}}</p>
+      <p class="card-text">Email: {{user.email}}</p>
+      <p class="card-text">Type: {{user.type}}</p>
+      <div class="btt">
+      <a href="#" class="btn btn-info">View</a>
+      <a href="#" class="btn btn-dark">Edit</a>
+      <a href="#" class="btn btn-danger">Delete</a>
+      </div>
+    </div>
+</div> -->

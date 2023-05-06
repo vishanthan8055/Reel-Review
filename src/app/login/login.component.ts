@@ -43,9 +43,12 @@ export class LoginComponent {
            localStorage.setItem("usertype",response.user.type);
            localStorage.setItem("token",response.accessToken);
            localStorage.setItem("email",response.user.email);
+           localStorage.setItem("id",response.user.id);
+
            this.log.username=response.user.username;
            this.log.usertype=response.user.type;
            this.log.token=response.accessToken;
+           this.log.id=response.id;
            this.status=true;
            if(response.user.type=="admin")
                this.route.navigate(['admin/home']);

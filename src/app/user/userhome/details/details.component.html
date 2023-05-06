@@ -1,4 +1,4 @@
-<div class="ban">
+<!-- <div class="ban">
     
 <div class="tp">
     <div class="lft">
@@ -29,4 +29,116 @@
     <p>Writer:{{state.writers}}</p>
 </div>
 </div>
+</div> -->
+<!-- <div class="revs">
+    <h1 style="text-align: center;">Reviews</h1>
+    <div class="bbx">
+        <app-review-box *ngFor="let x of reviews|rev:state.title" [review]="x"></app-review-box>
+    </div>
 </div>
+<div class="revfrm">
+    <h1 style="text-align: center;">Submit Your Review</h1>
+    <form>
+        <div class="form-group">
+            <label>Enter Your Review</label>
+            <textarea class="form-control"  rows="3" [(ngModel)]="ur" [ngModelOptions]="{standalone: true}"></textarea>
+        </div>
+        <button 
+        (click) = "onSub()" type="submit" class="btn btn-dark">Submit Review</button>
+      </form>
+</div> -->
+
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="movie-ticket">
+  <div class="container-fluid">
+    <!-- Item -->
+    <div class="ui-item">
+      <!-- Head -->
+      <div class="ui-head">
+        <!-- Background Image -->
+        <img src="http://localhost/movies/{{state.image}}" alt="" class="img-responsive bg-img" id="big">
+        <!-- Transparent Background -->
+        <div class="ui-trans clearfix">
+          <!-- Image -->
+          <img src="http://localhost/movies/{{state.image}}" alt="" class="img-responsive">
+          <!-- Details -->
+          <div class="ui-details clearfix">
+            <!-- Movie Name -->
+            <h2><a href="#">{{state.title}}</a></h2>
+            <!-- Labels -->
+            <a href="#" class="label">{{state.year}}</a>
+            <a href="#" class="label">{{state.language}}</a>
+            <a href="#" class="label">PG - 13</a>
+            <a href="#" class="label">143 min</a>
+
+            <a href="#" class="label" *ngFor="let x of state.genere">{{x}}</a>
+            <!-- Paragraph -->
+            <p>{{state.description}}</p>
+            <!-- Heading -->
+            <h4><span>Director</span>:</h4>
+            <!-- Director Name -->
+            <h5><a href="#">{{state.directors}}</a></h5>
+            <!-- Heading -->
+            <h4><span>Writers</span>:</h4>
+            <!-- Writers -->
+            <h5><a href="#"> {{state.writers}}</a></h5>
+            <!-- Heading -->
+            <h4><span>Stars</span>:</h4>
+            <!-- Stars -->
+            <h5>
+            <a href="#">{{state.cast}}</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+        <!-- Review -->
+        <div class="ui-review">
+          <!-- Heading -->
+          <h3>{{state.title}}</h3>
+          <!-- Paragraph -->
+          <p>{{state.description}}</p>
+          <!-- Buttons -->
+          <!-- <a href="#" class="ui-btn bg-red"><i class="fa fa-ticket"></i> Buy Tickets</a>
+          <a href="#" class="ui-btn bg-green"><i class="fa fa-dot-circle-o"></i> Buy DVDs</a> -->
+          
+        </div>
+      </div>  
+    </div>
+</div>                                
+
+
+<!--  -->
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<section class="content-item" id="comments">
+    <div class="container">   
+    	<div class="row">
+            <div class="col-sm-8">   
+                <form>
+                	<h3 class="pull-left">New Comment</h3>
+                	<button type="submit" class="btn btn-dark pull-right" (click) = "onSub()">Submit Comment</button>
+                    <fieldset>
+                        <div class="row">
+                            <div class="col-sm-3 col-lg-2 hidden-xs">
+                            	<img class="img-responsive" src="http://localhost/users/u1.png">
+                            </div>
+                            <div class="form-group col-xs-12 col-sm-9 col-lg-10">
+                                <textarea class="form-control" id="message" placeholder="Your message" [(ngModel)]="ur" [ngModelOptions]="{standalone: true}"></textarea>
+                            </div>
+                        </div>  	
+                    </fieldset>
+                </form>
+                
+                <h3>Comments</h3>
+                
+        <app-review-box *ngFor="let x of reviews|rev:state.title" [review]="x"></app-review-box>
+                
+             
+                
+            
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,63 @@
+<div class="frm">
+<h1 style="text-align: center;">Add Movies Here</h1>
+<form (ngSubmit)="submit()" class="ff">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Title</label>
+        <input type="text" class="form-control" [(ngModel)]="title" [ngModelOptions]="{standalone: true}" placeholder="Title">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Language</label>
+        <input type="text" class="form-control" [(ngModel)]="language" [ngModelOptions]="{standalone: true}" placeholder="Language">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Release Year</label>
+        <input type="text" class="form-control"[(ngModel)]="year" [ngModelOptions]="{standalone: true}" placeholder="Year">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Movie Description</label>
+      <input type="text" class="form-control" [(ngModel)]="desc" [ngModelOptions]="{standalone: true}" placeholder="Description">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Genere</label>
+      <input type="text" class="form-control" [(ngModel)]="generes" [ngModelOptions]="{standalone: true}" placeholder="Genere">
+    </div>
+    <div class="form-group">
+        <label for="inputAddress2">Cast</label>
+        <input type="text" class="form-control" [(ngModel)]="casts" [ngModelOptions]="{standalone: true}" placeholder="Cast">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Directors</label>
+        <input type="text" class="form-control" [(ngModel)]="directors" [ngModelOptions]="{standalone: true}" placeholder="Directors">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Writers</label>
+        <input type="text" class="form-control" [(ngModel)]="writers" [ngModelOptions]="{standalone: true}" placeholder="Writers">
+      </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">IMDB Rating</label>
+        <input type="text" class="form-control" [(ngModel)]="imdbr" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputCity">Global Ranking</label>
+        <input type="text" class="form-control" [(ngModel)]="globalr" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputCity">AKA</label>
+        <input type="text" class="form-control" [(ngModel)]="aka" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputCity">IMDB URL:</label>
+        <input type="text" class="form-control" [(ngModel)]="imdbu" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputCity">Image Name</label>
+        <input type="text" class="form-control" [(ngModel)]="image" [ngModelOptions]="{standalone: true}">
+      </div>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-dark">Add movie</button>
+  </form>
+</div>

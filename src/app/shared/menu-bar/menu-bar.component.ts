@@ -13,12 +13,15 @@ import { MovieService } from '../services/movie.service';
 })
 export class MenuBarComponent {
 
-  
+  isUser = true;
 
   constructor(private log:LoginoutService,private router:Router,private route:ActivatedRoute,private ms:MovieService) {
     // -----------------------------------------
    
     // --------------------------------------
+    if(localStorage.getItem("usertype") == "admin"){
+      this.isUser = false;
+    }
   }
   logout(){
     this.log.logout();

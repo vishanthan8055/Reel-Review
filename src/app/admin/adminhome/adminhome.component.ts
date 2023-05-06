@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Observable, map, startWith } from 'rxjs';
 import { MovieService } from 'src/app/shared/services/movie.service';
 export interface State {
@@ -21,7 +22,7 @@ export class AdminhomeComponent {
     
   ];
   movies:any;
-  constructor(private ms:MovieService) {
+  constructor(private ms:MovieService,private router:Router,private route:ActivatedRoute) {
     this.ms.getMovies().subscribe( {
       next: (data:any)=>{this.movies = data;
         this.movies=data;
@@ -52,5 +53,15 @@ export class AdminhomeComponent {
     const filterValue = value.toLowerCase();
 
     return this.states.filter(state => state.name.toLowerCase().includes(filterValue));
+  }
+  navigate(url:string){
+    
+    if(url=="")
+    window.location.reload()
+    else
+    this.router.navigate([url], {relativeTo:this.route});
+  }
+  changeRoute(){
+    this.router.navigate(['addmovie'],{relativeTo:this.route});
   }
 }

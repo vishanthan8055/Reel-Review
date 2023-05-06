@@ -11,18 +11,22 @@ export class LoginoutService {
  usertype:String='';
  token:any='';
  email:any='';
+ id:any="";
  status:boolean=false;
   constructor(private http:HttpClient) {
     let username=localStorage.getItem("username");
       let usertype=localStorage.getItem("usertype");
       let token=localStorage.getItem("token");
       let email=localStorage.getItem("email");
+      let id=localStorage.getItem("id");
       if(username&&usertype){
         this.status=true;
         this.username=username;
         this.usertype=usertype;
         this.token=token;
         this.email=email;
+        this.id=id;
+
       }
    }
 
@@ -66,5 +70,6 @@ export class LoginoutService {
     localStorage.removeItem("username");
     localStorage.removeItem("usertype");
     localStorage.removeItem("email");
+    localStorage.removeItem("id");
  }
 }
