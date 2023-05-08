@@ -10,10 +10,31 @@ import { UserService } from '../../services/user.service';
 export class ForumboxComponent {
 @Input() forum:any;
 @Input() user:any;
+users:any[]=[];
 rforum:any;
 isReply=false;
-constructor(private fs:ForumService){
+pp="";
+rpp="";
+constructor(private fs:ForumService,private us:UserService){
+  us.getUsers().subscribe({
+    next:(data:any)=>{
+      this.users=data;
+      for(let x of data){
+        if(x.username==this.forum.username){
+          this.pp = x.pimg
+        }
+      }
 
+    },
+    error:()=>this.users=[]
+  })
+}
+getImg(fusername:string){
+  for(let x of this.users){
+    if(x.username == fusername){
+      return x.pimg;
+    }
+  }
 }
 toggleR(){
   this.isReply = this.isReply===true?false:true;
@@ -41,6 +62,12 @@ del(){
   window.location.reload()},
     error:()=>alert("Failed on deleted"),
   })
+}
+isCA(){
+  if(localStorage.getItem("usertype")=="admin"){
+    return true;
+  }
+  return false;
 }
 isA(){
   if(this.forum.usertype === "admin"){

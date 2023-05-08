@@ -1,4 +1,26 @@
 {
+  "carousel": [
+    {
+      "title": "Varisu",
+      "image": "varisu.jpg"
+    },
+    {
+      "title": "Varisu",
+      "image": "varisu.jpg"
+    },
+    {
+      "title": "Varisu",
+      "image": "varisu.jpg"
+    },
+    {
+      "title": "Varisu",
+      "image": "varisu.jpg"
+    },
+    {
+      "title": "Varisu",
+      "image": "varisu.jpg"
+    }
+  ],
   "chat": [
     {
       "id": 1,
@@ -16,6 +38,20 @@
           "username": "admin_1",
           "usertype": "admin",
           "message": "Hi admin, Thanks for this wonderful website",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "message": "Good Evening admin, I am facing issues on login page....Kindly fix it as soon as possible",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Sure vishanthan🌟🌟",
           "date": "08/05/2023",
           "pimg": "u1.png"
         }
@@ -88,6 +124,20 @@
           "message": "Will be fixed within EOD",
           "date": "08/05/2023",
           "pimg": "u1.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "It has been Fixed!!! Kindly check it.",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "charumathi",
+          "usertype": "user",
+          "message": "Yes i got it now its working",
+          "date": "08/05/2023",
+          "pimg": "u2.png"
         }
       ]
     }
@@ -214,9 +264,31 @@
           "usertype": "admin",
           "comment": "It will released soon @charu",
           "date": "08/05/2023"
+        },
+        {
+          "username": "charumathi",
+          "usertype": "user",
+          "comment": "ha ha",
+          "date": "08/05/2023"
         }
       ],
       "id": 9
+    },
+    {
+      "username": "admin_1",
+      "usertype": "admin",
+      "comment": "Good night all🤦‍♀️🤦‍♀️🤦‍♀️",
+      "date": "08/05/2023",
+      "replies": [],
+      "id": 10
+    },
+    {
+      "username": "charumathi",
+      "usertype": "user",
+      "comment": "Good night all!!!",
+      "date": "08/05/2023",
+      "replies": [],
+      "id": 11
     }
   ],
   "reviews": [
@@ -352,7 +424,7 @@
       "gender": "female",
       "Phone": "9900990099",
       "City": "chennai",
-      "pimg": "u1.png",
+      "pimg": "u2.png",
       "watchlist": [
         "Varisu",
         "Dear Comrade",
@@ -386,7 +458,7 @@
       "gender": "",
       "Phone": "",
       "City": "",
-      "pimg": "",
+      "pimg": "u1.png",
       "watchlist": [
         "Varisu",
         "Dear Comrade",
@@ -406,7 +478,7 @@
       "gender": "",
       "Phone": "",
       "City": "",
-      "pimg": "",
+      "pimg": "u1.png",
       "id": 6
     },
     {
@@ -420,8 +492,22 @@
       "gender": "",
       "Phone": "",
       "City": "",
-      "pimg": "",
+      "pimg": "u2.png",
       "id": 7
+    },
+    {
+      "email": "sanju@gmail.com",
+      "password": "$2a$10$xXVK7nwFnvZoQnX12wZmUOZdh86qrTqywCCSV65ebNiWIGC9e.Bza",
+      "username": "sanjana@gmail.com",
+      "type": "user",
+      "firstname": "",
+      "lastname": "",
+      "Age": "",
+      "gender": "",
+      "Phone": "",
+      "City": "",
+      "pimg": "u2.png",
+      "id": 8
     }
   ],
   "movies": [

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-cbox',
@@ -7,8 +8,24 @@ import { Component, Input } from '@angular/core';
 })
 export class CboxComponent {
   @Input() message:any;
+  users:any;
+  pp="";
   // chat-message left
   // chat-message right
+  constructor(private us:UserService){
+    us.getUsers().subscribe({
+      next:(data:any)=>{
+        this.users=data;
+        for(let x of data){
+          if(x.username==this.message.username){
+            this.pp = x.pimg
+          }
+        }
+  
+      },
+      error:()=>this.users=[]
+    })
+  }
   isA(){
     if(localStorage.getItem("id") ==  "admin"){
       return true;

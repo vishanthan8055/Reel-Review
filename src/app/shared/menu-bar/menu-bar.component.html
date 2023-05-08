@@ -1,12 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nv">
     <div class="lft">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <a class="navbar-brand" (click)="navigate('')">Reel-Review</a>
     </div>
     <div class="rgt">
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home</a>
@@ -18,7 +14,7 @@
             <a class="nav-link" (click)="navigate('users')">Users</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" (click)="navigate('forum')">forum</a>
+            <a class="nav-link" (click)="navigate('forum')">Forum</a>
           </li>
           <li class="nav-item" *ngIf="!isUser">
             <a class="nav-link" (click)="navigate('contact')">Inbox</a>
@@ -31,7 +27,7 @@
             <a class="nav-link"  href="/login" (click)="logout()">Logout</a>
           </li>
         </ul>
-      </div>
     </div>
   </nav>
+  
   

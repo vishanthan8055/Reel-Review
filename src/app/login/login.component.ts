@@ -120,7 +120,7 @@ register():void{
                    }}
                 )
             }
-        
+    window.location.reload(); 
    }
 
 }

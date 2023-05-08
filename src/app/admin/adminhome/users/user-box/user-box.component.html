@@ -18,7 +18,7 @@
   <div class="card-container">
     <span *ngIf="isA()" class="pro">ADMIN</span>
     <span *ngIf="!isA()" class="usr">USER</span>
-    <img class="round" src="http://localhost/users/u1.png" alt="user" />
+    <img class="round" src="http://localhost/users/{{user.pimg}}" alt="user" />
     <h3>{{user.username}}</h3>
     <h6>{{user.email}}</h6>
     <div class="buttons">

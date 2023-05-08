@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable, map, startWith } from 'rxjs';
+import { CarouselService } from 'src/app/shared/services/carousel.service';
 import { MovieService } from 'src/app/shared/services/movie.service';
 
 export interface State {
@@ -23,7 +24,12 @@ export class UserhomeComponent {
     
   ];
   movies:any;
-  constructor(private ms:MovieService) {
+  ca:any;
+  constructor(private ms:MovieService,private cas:CarouselService) {
+    cas.getcarousel().subscribe({
+      next:(data:any)=>this.ca = data,
+      error:()=>this.ca = [],
+    })
     this.ms.getMovies().subscribe( {
       next: (data:any)=>{this.movies = data;
         this.movies=data;
@@ -46,6 +52,9 @@ export class UserhomeComponent {
       map(state => (state ? this._filterStates(state) : this.states.slice())),
     );
   
+    // 
+    
+    // 
    }
    onSearch(){
     this.nameS = this.name;

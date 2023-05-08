@@ -1,5 +1,5 @@
 <div class="media-block">
-    <a class="media-left"><img class="img-circle img-sm" alt="Profile Picture" src="http://localhost/users/{{user.pimg}}"></a>
+    <a class="media-left"><img class="img-circle img-sm" alt="Profile Picture" src="http://localhost/users/{{pp}}"></a>
     <div class="media-body">
       <div class="mar-btm">
         <div class="lft">
@@ -7,7 +7,7 @@
         <p *ngIf="isA()" class="text-semibold media-heading box-inline">🌟{{forum.username}}🌟</p>
         <p class="text-muted text-sm">{{forum.date}}</p>
         </div>
-        <div class="rgt">
+        <div class="rgt" *ngIf="isCA()">
           <button class="btn btn-danger"
           (click)="del()">Delete</button>
         </div>
@@ -35,7 +35,7 @@
       <!-- Comments -->
       <div>
         <div *ngFor="let x of forum.replies" class="media-block">
-          <a class="media-left"><img class="img-circle img-sm" alt="Profile Picture" src="http://localhost/users/u1.png"></a>
+          <a class="media-left"><img class="img-circle img-sm" alt="Profile Picture" src="http://localhost/users/{{getImg(x.username)}}"></a>
           <div class="media-body">
             <div class="mar-btm">
               <!-- <p class="text-semibold media-heading box-inline">{{x.username}}</p> -->
