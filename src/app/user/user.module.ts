@@ -14,8 +14,8 @@ import { WatchlistboxComponent } from './userhome/watchlist/watchlistbox/watchli
 import { FavPipe } from '../pipes/fav.pipe';
 import { ReviewBoxComponent } from './userhome/details/review-box/review-box.component';
 import { RevPipe } from '../pipes/rev.pipe';
-import { ForumComponent } from '../shared/forum/forum.component';
 import { UforumComponent } from './userhome/uforum/uforum.component';
+import { ContactComponent } from './userhome/contact/contact.component';
 
 const route:Routes=[
 
@@ -38,6 +38,11 @@ const route:Routes=[
   {
     path:"forum", 
     component:UforumComponent
+  }  ,
+  
+  {
+    path:"contact", 
+    component:ContactComponent
   }  
 
   ]
@@ -57,7 +62,8 @@ const route:Routes=[
     WatchlistboxComponent,
     ReviewBoxComponent,
     RevPipe,
-    UforumComponent
+    UforumComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,

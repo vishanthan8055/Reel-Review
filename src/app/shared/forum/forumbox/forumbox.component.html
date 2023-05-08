@@ -1,0 +1,58 @@
+<div class="media-block">
+    <a class="media-left"><img class="img-circle img-sm" alt="Profile Picture" src="http://localhost/users/{{user.pimg}}"></a>
+    <div class="media-body">
+      <div class="mar-btm">
+        <div class="lft">
+        <p *ngIf="!isA()" class="text-semibold media-heading box-inline">{{forum.username}}</p>
+        <p *ngIf="isA()" class="text-semibold media-heading box-inline">🌟{{forum.username}}🌟</p>
+        <p class="text-muted text-sm">{{forum.date}}</p>
+        </div>
+        <div class="rgt">
+          <button class="btn btn-danger"
+          (click)="del()">Delete</button>
+        </div>
+      </div>
+      <p>{{forum.comment}}</p>
+      <div class="pad-ver">
+        <!-- <div class="btn-group">
+          <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
+          <a class="btn btn-sm btn-default btn-hover-danger" href="#"><i class="fa fa-thumbs-down"></i></a>
+        </div> -->
+        <a (click)="toggleR()" class="btn btn-sm btn-default btn-hover-primary">Reply</a>
+        <div class="panel" *ngIf="isReply">
+            <div class="panel-body">
+              <textarea class="form-control" rows="2" 
+                placeholder="Reply to {{forum.username}}'s comment"
+                [(ngModel)]="rforum" [ngModelOptions]="{standalone: true}"></textarea>
+              <div class="mar-top clearfix">
+                <button (click)="postReply()" class="btn btn-sm btn-dark pull-right" type="submit"><i class="fa fa-pencil fa-fw"></i> Post reply</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <hr>
+
+      <!-- Comments -->
+      <div>
+        <div *ngFor="let x of forum.replies" class="media-block">
+          <a class="media-left"><img class="img-circle img-sm" alt="Profile Picture" src="http://localhost/users/u1.png"></a>
+          <div class="media-body">
+            <div class="mar-btm">
+              <!-- <p class="text-semibold media-heading box-inline">{{x.username}}</p> -->
+              <p *ngIf="!isRa(x)" class="text-semibold media-heading box-inline">{{x.username}}</p>
+              <p *ngIf="isRa(x)" class="text-semibold media-heading box-inline">🌟{{x.username}}🌟</p>
+              <p class="text-muted text-sm">{{x.date}}</p>
+            </div>
+            <p>{{x.comment}}</p>
+            <div class="pad-ver">
+              <!-- <div class="btn-group">
+                <a class="btn btn-sm btn-default btn-hover-success active" href="#"><i class="fa fa-thumbs-up"></i> You Like it</a>
+                <a class="btn btn-sm btn-default btn-hover-danger" href="#"><i class="fa fa-thumbs-down"></i></a>
+              </div> -->
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

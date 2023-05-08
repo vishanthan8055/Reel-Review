@@ -12,6 +12,9 @@ import { AddmovieComponent } from './adminhome/addmovie/addmovie.component';
 import { EditmovieComponent } from './adminhome/editmovie/editmovie.component';
 import { UsersComponent } from './adminhome/users/users.component';
 import { UserBoxComponent } from './adminhome/users/user-box/user-box.component';
+import { EditUserComponent } from './adminhome/users/edit-user/edit-user.component';
+import { AforumComponent } from './adminhome/aforum/aforum.component';
+import { AcontactComponent } from './adminhome/acontact/acontact.component';
 
 
 const route:Routes=[
@@ -35,7 +38,19 @@ const route:Routes=[
     {
       path:"users", 
       component:UsersComponent
-    } 
+    } ,
+    {
+      path:"edituser", 
+      component:EditUserComponent
+    },
+    {
+      path:"forum", 
+      component:AforumComponent
+    },
+    {
+      path:"contact", 
+      component:AcontactComponent
+    }
   ]
 }]
 
@@ -49,6 +64,9 @@ const route:Routes=[
     EditmovieComponent,
     UsersComponent,
     UserBoxComponent,
+    EditUserComponent,
+    AforumComponent,
+    AcontactComponent,
   ],
   imports: [
     CommonModule,

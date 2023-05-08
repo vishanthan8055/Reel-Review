@@ -1,4 +1,224 @@
 {
+  "chat": [
+    {
+      "id": 1,
+      "username": "vishanthan",
+      "usertype": "user",
+      "messages": [
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "message": "Hi admin, Thanks for this wonderful website",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Hi admin, Thanks for this wonderful website",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "username": "charumathi",
+      "usertype": "charumathi",
+      "messages": [
+        {
+          "username": "charumathi",
+          "usertype": "user",
+          "message": "Hi admin, Thanks for this wonderful website",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Hi admin, Thanks for this wonderful website",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "charumathi",
+          "usertype": "charumathi",
+          "message": "Okay admin. Have a great Day💛💛",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Thank you charu...Wish you the same🖤🖤🖤",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "charumathi",
+          "usertype": "user",
+          "message": "Byee Admin💥💥💤💤",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Charu is the bug is fixed??",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "charumathi",
+          "usertype": "user",
+          "message": "no not at all",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "charumathi",
+          "usertype": "user",
+          "message": "Actually Its partially fixed i guess ",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Will be fixed within EOD",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        }
+      ]
+    }
+  ],
+  "forum": [
+    {
+      "id": 1,
+      "username": "vishanthan",
+      "usertype": "user",
+      "comment": "bla bla bla",
+      "date": "14/05/2002",
+      "replies": [
+        {
+          "username": "charumathi",
+          "usertype": "user",
+          "comment": "ha ha ha",
+          "date": "14/05/2002"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "charumathi",
+      "usertype": "user",
+      "comment": "bla bla bla",
+      "date": "14/05/2002",
+      "replies": [
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "comment": "ha ha ha",
+          "date": "14/05/2002"
+        },
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "comment": "Hello Charu!!",
+          "date": "07/05/2023"
+        }
+      ]
+    },
+    {
+      "username": "vishanthan",
+      "usertype": "user",
+      "comment": "Good morning Everyone🙌🙌🙌💖",
+      "date": "07/05/2023",
+      "replies": [],
+      "id": 3
+    },
+    {
+      "username": "vishanthan",
+      "usertype": "user",
+      "comment": "Happy New Year Folks🙌🙌🎂🎉🎉",
+      "date": "07/05/2023",
+      "replies": [
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "comment": "I am wishing :)",
+          "date": "07/05/2023"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "username": "admin_1",
+      "usertype": "admin",
+      "comment": "Hello Guys, Felling sleepy so see you tomorrow",
+      "date": "07/05/2023",
+      "replies": [],
+      "id": 5
+    },
+    {
+      "username": "admin_1",
+      "usertype": "admin",
+      "comment": "Good morning Guys Have a great day",
+      "date": "08/05/2023",
+      "replies": [
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "comment": "Good morning Admin💖🙏🙏",
+          "date": "08/05/2023"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "username": "charumathi",
+      "usertype": "user",
+      "comment": "Good evening Guys💢💢",
+      "date": "08/05/2023",
+      "replies": [],
+      "id": 7
+    },
+    {
+      "username": "charumathi",
+      "usertype": "user",
+      "comment": "Anyone Know when KGF chapter 3 will release in India???",
+      "date": "08/05/2023",
+      "replies": [],
+      "id": 8
+    },
+    {
+      "username": "charumathi",
+      "usertype": "user",
+      "comment": "Anyone Know when KGF chapter 3 will release in India???",
+      "date": "08/05/2023",
+      "replies": [
+        {
+          "username": "charumathi",
+          "usertype": "user",
+          "comment": "I am very much interested on waiting",
+          "date": "08/05/2023"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "comment": "It will be released soon in the year of 2024 ",
+          "date": "08/05/2023"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "comment": "It will released soon @charu",
+          "date": "08/05/2023"
+        }
+      ],
+      "id": 9
+    }
+  ],
   "reviews": [
     {
       "id": 1,
@@ -104,6 +324,13 @@
       "password": "$2a$10$pM9FhtNLv.pI5u243Nm2xukRRFUrcnRuphZIOkg7HWa0e/Db/lO0m",
       "username": "vishanthan",
       "type": "user",
+      "firstname": "Vishanthan",
+      "lastname": "Raghu",
+      "Age": "22",
+      "gender": "male",
+      "Phone": "9988776655",
+      "City": "chennai",
+      "pimg": "u1.png",
       "watchlist": [
         "Naruto",
         "Dear Comrade",
@@ -119,6 +346,13 @@
       "password": "$2a$10$pM9FhtNLv.pI5u243Nm2xukRRFUrcnRuphZIOkg7HWa0e/Db/lO0m",
       "username": "charumathi",
       "type": "user",
+      "firstname": "charumathi ",
+      "lastname": "SB",
+      "Age": "22",
+      "gender": "female",
+      "Phone": "9900990099",
+      "City": "chennai",
+      "pimg": "u1.png",
       "watchlist": [
         "Varisu",
         "Dear Comrade",
@@ -132,6 +366,13 @@
       "password": "$2a$10$pM9FhtNLv.pI5u243Nm2xukRRFUrcnRuphZIOkg7HWa0e/Db/lO0m",
       "username": "admin_1",
       "type": "admin",
+      "firstname": "",
+      "lastname": "",
+      "Age": "",
+      "gender": "",
+      "Phone": "",
+      "City": "",
+      "pimg": "u1.png",
       "id": 2
     },
     {
@@ -139,6 +380,13 @@
       "password": "$2a$10$upCdlOMYMvO2T1/1Dj/IyuobDFLk0XlMinmYqwG5OUu/kvcZXKFX.",
       "username": "pppppp",
       "type": "user",
+      "firstname": "",
+      "lastname": "",
+      "Age": "",
+      "gender": "",
+      "Phone": "",
+      "City": "",
+      "pimg": "",
       "watchlist": [
         "Varisu",
         "Dear Comrade",
@@ -152,7 +400,28 @@
       "password": "$2a$10$upCdlOMYMvO2T1/1Dj/IyuobDFLk0XlMinmYqwG5OUu/kvcZXKFX.",
       "username": "rrrr",
       "type": "admin",
+      "firstname": "",
+      "lastname": "",
+      "Age": "",
+      "gender": "",
+      "Phone": "",
+      "City": "",
+      "pimg": "",
       "id": 6
+    },
+    {
+      "email": "deev@gmail.com",
+      "password": "$2a$10$E7hkhvsxSjD31GuZEEhW/.7KKh6Tr2VVSGORDF9miUzCvMOV.V2nS",
+      "username": "deev",
+      "type": "user",
+      "firstname": "",
+      "lastname": "",
+      "Age": "",
+      "gender": "",
+      "Phone": "",
+      "City": "",
+      "pimg": "",
+      "id": 7
     }
   ],
   "movies": [

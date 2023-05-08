@@ -1,1 +1,23 @@
-<p>forum works! {{user.username}}</p>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container bootdey">
+<div class="col-md-12 bootstrap snippets">
+<div class="panel">
+  <div class="panel-body">
+    <textarea class="form-control" rows="2" placeholder="What are you thinking?" [(ngModel)]="uforum" [ngModelOptions]="{standalone: true}"></textarea>
+    <div class="mar-top clearfix">
+      <button (click)="onSub()" class="btn btn-sm btn-dark pull-right" type="submit"><i class="fa fa-pencil fa-fw"></i> Share</button>
+    </div>
+  </div>
+</div>
+<div class="panel">
+    <div class="panel-body" id="bb">
+    <!-- Newsfeed Content -->
+    <!--===================================================-->
+    <app-forumbox *ngFor="let x of forums" [forum]="x" [user]="user"></app-forumbox>
+    <!--===================================================-->
+    <!-- End Newsfeed Content -->
+
+    </div>
+</div>
+</div>
+</div>

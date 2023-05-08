@@ -6,6 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { ForumComponent } from './forum/forum.component';
+import { ForumboxComponent } from './forum/forumbox/forumbox.component';
+import { ChatsComponent } from './chats/chats.component';
+import { CboxComponent } from './chats/cbox/cbox.component';
 
 
 
@@ -13,7 +16,10 @@ import { ForumComponent } from './forum/forum.component';
   declarations: [
     MenuBarComponent,
     SearchBarComponent,
-    ForumComponent
+    ForumComponent,
+    ForumboxComponent,
+    ChatsComponent,
+    CboxComponent,
   ],
   imports: [
     CommonModule,
@@ -22,6 +28,6 @@ import { ForumComponent } from './forum/forum.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  exports:[MenuBarComponent,ForumComponent]
+  exports:[MenuBarComponent,ForumComponent,ChatsComponent]
 })
 export class SharedModule { }

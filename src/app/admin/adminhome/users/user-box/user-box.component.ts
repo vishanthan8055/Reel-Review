@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from 'src/app/shared/services/user.service';
 
 @Component({
@@ -8,10 +9,12 @@ import { UserService } from 'src/app/shared/services/user.service';
 })
 export class UserBoxComponent {
 @Input() user:any;
-constructor(private us:UserService){
+constructor(private us:UserService,private route:ActivatedRoute,private router:Router){
   
 }
-
+changeRoute(){
+  this.router.navigate(['../edituser'],{relativeTo:this.route,state:this.user});
+}
 isA(){
   return this.user.type ==="admin"?true:false;
 }

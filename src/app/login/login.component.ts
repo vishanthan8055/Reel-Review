@@ -44,6 +44,7 @@ export class LoginComponent {
            localStorage.setItem("token",response.accessToken);
            localStorage.setItem("email",response.user.email);
            localStorage.setItem("id",response.user.id);
+           localStorage.setItem("pimg",response.user.pimg);
 
            this.log.username=response.user.username;
            this.log.usertype=response.user.type;
@@ -90,7 +91,19 @@ register():void{
        this.rstatus=true;
      
                 this.rstatus=true;
-                let obj={username:this.rusername,password:this.rpassword,type:"user",email: this.remail}
+                let obj={
+                  username:this.rusername,
+                  password:this.rpassword,
+                  type:"user",
+                  email: this.remail,
+                  firstname:"",
+                  lastname:"",
+                  Age:"",
+                  gender:"",
+                  Phone:"",
+                  City:"",
+                  pimg:""
+                }
                 this.log.register(obj).subscribe({
                   next: (result:any)=>{
                        if(result.success == false)

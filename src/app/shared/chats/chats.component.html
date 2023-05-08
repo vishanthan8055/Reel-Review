@@ -1,0 +1,59 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <strong>Chat room </strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox chat-view">
+                <div class="ibox-title">
+                     Chat room panel
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-md-9 ">
+                            <div class="chat-discussion">
+
+                                <app-cbox *ngFor="let x of m" [message]="x"></app-cbox>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-3" *ngIf="isAdmin()">
+                            <div class="chat-users">
+                                <div class="users-list">
+                                    <div class="chat-user" *ngFor="let u of chats">
+                                        <img class="chat-avatar" src="http://localhost/users/u1.png" alt="">
+                                        <div class="chat-user-name">
+                                            <button (click)="un(u.id)">{{u.username}}</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="chat-message-form">
+                                <div class="form-group" id="sbb">
+                                    <textarea class="form-control message-input"
+                                    [(ngModel)]="mes" [ngModelOptions]="{standalone: true}"
+                                     name="message" placeholder="Enter message text"></textarea>
+                                    <button class="btn btn-dark" 
+                                    (click)="onSub()" type="submit">Send▶</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

@@ -3,6 +3,11 @@
     height: 46px;
 }
 
+.img-circle{
+    border-radius: 5rem;
+    border:2px solid black;
+    margin-right: .5rem;
+}
 .panel {
     box-shadow: 0 2px 0 rgba(0,0,0,0.075);
     border-radius: 0;
@@ -22,13 +27,9 @@
 
 .panel-body {
     padding: 25px 20px;
-    
 }
 
-#bb{
-    display: flex;
-    flex-direction: column-reverse;
-}
+
 .media-block .media-left {
     display: block;
     float: left
@@ -97,4 +98,13 @@
 
 .mar-top {
     margin-top: 15px;
+}
+.mar-btm{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.rgt button{
+    padding: .5rem;
+    font-size: .8rem;
 }
