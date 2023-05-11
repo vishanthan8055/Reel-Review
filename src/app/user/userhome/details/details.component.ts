@@ -20,8 +20,12 @@ export class DetailsComponent implements OnInit {
       error:()=>this.reviews=[]
     })
     
+    
   }
   ngOnInit(): void {
+  }
+  getPimg(){
+    return localStorage.getItem("pimg");
   }
   getDate(){
     var today = new Date();

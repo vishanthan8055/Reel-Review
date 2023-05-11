@@ -8,7 +8,10 @@ import { MaterialModule } from './material/material.module';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { AlangPipe } from './pipes/alang.pipe';
+import { UlangPipe } from './pipes/ulang.pipe';
+import { ReversePipe } from './pipes/reverse.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,9 +24,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }

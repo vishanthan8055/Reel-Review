@@ -9,6 +9,8 @@ import { ForumComponent } from './forum/forum.component';
 import { ForumboxComponent } from './forum/forumbox/forumbox.component';
 import { ChatsComponent } from './chats/chats.component';
 import { CboxComponent } from './chats/cbox/cbox.component';
+import { EditprofileComponent } from './editprofile/editprofile.component';
+import { ReversePipe } from '../pipes/reverse.pipe';
 
 
 
@@ -20,6 +22,8 @@ import { CboxComponent } from './chats/cbox/cbox.component';
     ForumboxComponent,
     ChatsComponent,
     CboxComponent,
+    EditprofileComponent,
+    ReversePipe
   ],
   imports: [
     CommonModule,
@@ -28,6 +32,6 @@ import { CboxComponent } from './chats/cbox/cbox.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  exports:[MenuBarComponent,ForumComponent,ChatsComponent]
+  exports:[MenuBarComponent,ForumComponent,ChatsComponent,EditprofileComponent]
 })
 export class SharedModule { }

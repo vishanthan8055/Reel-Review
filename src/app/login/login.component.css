@@ -7,6 +7,9 @@
 *{
     background-color: mistyrose;
 } */
+.errors{
+    color: red;
+}
 .ff{
     display: flex;
     align-items: center;

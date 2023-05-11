@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MovieService } from 'src/app/shared/services/movie.service';
 import { UserService } from 'src/app/shared/services/user.service';
@@ -12,6 +12,8 @@ export class WatchlistboxComponent {
   @Input() movie:any;
   user:any;
   uid:any;
+@Output("ngOnInit") ngOnInit: EventEmitter<any> = new EventEmitter();
+
   ufav=[""];
   constructor(public router:Router,public route:ActivatedRoute,private ms:MovieService,private us:UserService,) {
      this.uid=localStorage.getItem("id")
@@ -36,6 +38,6 @@ export class WatchlistboxComponent {
       next:()=>alert(this.movie.title+" is removed from favorites!!"),
       error:()=>alert("Error on removing from favorites...")
     });
-    location.reload();
+    this.ngOnInit.emit()
   }
 }

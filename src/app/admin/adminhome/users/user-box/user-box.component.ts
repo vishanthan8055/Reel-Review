@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from 'src/app/shared/services/user.service';
 
@@ -9,6 +9,7 @@ import { UserService } from 'src/app/shared/services/user.service';
 })
 export class UserBoxComponent {
 @Input() user:any;
+@Output("ngOnInit") ngOnInit: EventEmitter<any> = new EventEmitter();
 constructor(private us:UserService,private route:ActivatedRoute,private router:Router){
   
 }
@@ -27,8 +28,7 @@ isAdmin(){
 delUser(){
   this.us.deleteUsers(this.user.id).subscribe({
     next:()=>{
-      alert("successfully Deleted User");
-      window.location.reload()
+      this.ngOnInit.emit();
     },
     error:()=>alert("Failed to delete user")
   })

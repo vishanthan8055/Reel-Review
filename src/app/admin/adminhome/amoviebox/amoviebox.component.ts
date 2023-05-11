@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MovieService } from 'src/app/shared/services/movie.service';
 
@@ -9,6 +9,7 @@ import { MovieService } from 'src/app/shared/services/movie.service';
 })
 export class AmovieboxComponent {
   @Input() movie:any;
+@Output("ngOnInit") ngOnInit: EventEmitter<any> = new EventEmitter();
   deleteStatus=""
   constructor(private ms:MovieService,private route:ActivatedRoute,private router:Router){}
   changeRoute(){
@@ -16,9 +17,10 @@ export class AmovieboxComponent {
   }
   onRemove(id:any){
       this.ms.deleteMovies(id).subscribe({
-        next:()=>this.deleteStatus = "Successfully Deleted",
+        next:()=>{
+          this.ngOnInit.emit();
+        },
         error:()=>this.deleteStatus="Failed to delete"
       });
-      location.reload();
   }
 }

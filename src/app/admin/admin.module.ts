@@ -15,6 +15,7 @@ import { UserBoxComponent } from './adminhome/users/user-box/user-box.component'
 import { EditUserComponent } from './adminhome/users/edit-user/edit-user.component';
 import { AforumComponent } from './adminhome/aforum/aforum.component';
 import { AcontactComponent } from './adminhome/acontact/acontact.component';
+import { AlangPipe } from '../pipes/alang.pipe';
 
 
 const route:Routes=[
@@ -67,6 +68,7 @@ const route:Routes=[
     EditUserComponent,
     AforumComponent,
     AcontactComponent,
+    AlangPipe
   ],
   imports: [
     CommonModule,

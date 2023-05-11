@@ -3,7 +3,6 @@ import { FormControl } from '@angular/forms';
 import { Observable, map, startWith } from 'rxjs';
 import { CarouselService } from 'src/app/shared/services/carousel.service';
 import { MovieService } from 'src/app/shared/services/movie.service';
-
 export interface State {
   flag: string;
   name: string;
@@ -25,6 +24,8 @@ export class UserhomeComponent {
   ];
   movies:any;
   ca:any;
+  selected="All";
+  languages=["All","English","Tamil","Japanese","French","Russian"]
   constructor(private ms:MovieService,private cas:CarouselService) {
     cas.getcarousel().subscribe({
       next:(data:any)=>this.ca = data,

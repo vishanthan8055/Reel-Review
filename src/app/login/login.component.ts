@@ -100,9 +100,10 @@ register():void{
                   lastname:"",
                   Age:"",
                   gender:"",
+                  watchlist:[],
                   Phone:"",
                   City:"",
-                  pimg:""
+                  pimg:"unknown.png"
                 }
                 this.log.register(obj).subscribe({
                   next: (result:any)=>{

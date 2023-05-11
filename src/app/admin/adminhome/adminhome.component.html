@@ -20,10 +20,16 @@
         <button (click)="onSearch()" class="btn btn-dark">search</button>
         <!-- <button  class="btn btn-dark"><a routerLink="/addmovie">+Add Movies</a></button> -->
   </div>
+  <div class="flt">
+    <span>Language: </span>
+    <select [(ngModel)]="selected" class="bx">
+      <option *ngFor="let x of languages">{{x}}</option>
+      </select>
+  </div>
   <div class="ad">
     <button class="btn btn-dark"><a (click)="changeRoute()">Add Movie</a></button>
   </div>
 </div>
 <div class="cont">
-    <app-amoviebox *ngFor="let x of movies | searcha:nameS" [movie]="x"></app-amoviebox>
+    <app-amoviebox *ngFor="let x of movies | alang:selected | searcha:nameS" [movie]="x" (ngOnInit)="ngOnInit()"></app-amoviebox>
 </div>

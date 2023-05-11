@@ -14,4 +14,10 @@ export class UsersComponent {
       error:()=>this.users = []
     })
   }
+  ngOnInit(){
+    this.us.getUsers().subscribe({
+      next:(data:any)=>this.users = data,
+      error:()=>this.users = []
+    })
+  }
 }

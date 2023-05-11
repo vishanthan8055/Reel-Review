@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component,EventEmitter,Input, Output } from '@angular/core';
 import { ForumService } from '../../services/forum.service';
 import { UserService } from '../../services/user.service';
 
@@ -10,6 +10,7 @@ import { UserService } from '../../services/user.service';
 export class ForumboxComponent {
 @Input() forum:any;
 @Input() user:any;
+@Output("ngOnInit") ngOnInit: EventEmitter<any> = new EventEmitter();
 users:any[]=[];
 rforum:any;
 isReply=false;
@@ -49,17 +50,24 @@ getDate(){
   if(dd<10){
     ds='0'+dd
   }
+  else{
+    ds=""+dd;
+  }
   if(mm<10)
   {
     ms='0'+mm
+  }
+  else{
+    ms=""+mm
   }
   return ds+'/'+ms+'/'+yyyy;
 
 }
 del(){
   this.fs.deleteForums(this.forum.id).subscribe({
-    next:()=>{alert("Successfully deleted");
-  window.location.reload()},
+    next:()=>{
+      this.ngOnInit.emit()
+    },
     error:()=>alert("Failed on deleted"),
   })
 }
@@ -95,7 +103,7 @@ postReply(){
       next:()=>{
         this.isReply = false;
         this.rforum="";
-        alert("Successfully Replied!!!");},
+      },
       error:()=>alert("Failed to Reply!!!")
     }
   )

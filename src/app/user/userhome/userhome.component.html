@@ -1,4 +1,18 @@
+<div class="car">
+  <h1 style="text-align: center; background-color: grey;">Welcome to Reel Review</h1>
+  <carousel>
+    <!-- <app-carousel *ngFor="let x of ca" [car]="x"></app-carousel> -->
+    <slide *ngFor="let x of ca" class="sl">
+      <img src="http://localhost/movies/{{x.image}}" alt="first slide" style="display: block;">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>{{x.title}}</h3>
+      </div>
+    </slide>
+  </carousel>
+  
+</div>
 <div class="sb">
+ 
 <form class="example-form">
     <mat-form-field class="example-full-width" appearance="fill">
       <mat-label class="sr"><img  src="http://localhost/movies/search.png" alt=""></mat-label>
@@ -17,8 +31,15 @@
   </form>
   <button (click)="onSearch()" class="btn btn-dark">search</button>
   </div>
+  
+  <div class="flt" style="padding-left: 5rem;font-size: large;">
+    <span>Language: </span>
+    <select [(ngModel)]="selected" class="bx">
+      <option *ngFor="let x of languages">{{x}}</option>
+      </select>
+  </div>
 <div class="cont">
-<app-moviebox *ngFor="let x of movies|searchp:nameS" [movie]="x"></app-moviebox>
+<app-moviebox *ngFor="let x of movies|ulang:selected|searchp:nameS" [movie]="x"></app-moviebox>
 </div>
 
 

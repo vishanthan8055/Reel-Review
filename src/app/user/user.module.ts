@@ -16,6 +16,11 @@ import { ReviewBoxComponent } from './userhome/details/review-box/review-box.com
 import { RevPipe } from '../pipes/rev.pipe';
 import { UforumComponent } from './userhome/uforum/uforum.component';
 import { ContactComponent } from './userhome/contact/contact.component';
+import { CarouselComponent } from './userhome/carousel/carousel.component';
+import { CarouselConfig } from 'ngx-bootstrap/carousel';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { EditpComponent } from './userhome/editp/editp.component';
+import { UlangPipe } from '../pipes/ulang.pipe';
 
 const route:Routes=[
 
@@ -43,6 +48,10 @@ const route:Routes=[
   {
     path:"contact", 
     component:ContactComponent
+  } ,
+  {
+    path:"editp", 
+    component:EditpComponent
   }  
 
   ]
@@ -58,12 +67,15 @@ const route:Routes=[
     DetailsComponent,
     SearchpPipe,
     FavPipe,
+    UlangPipe,
     WatchlistComponent,
     WatchlistboxComponent,
     ReviewBoxComponent,
     RevPipe,
     UforumComponent,
-    ContactComponent
+    ContactComponent,
+    CarouselComponent,
+    EditpComponent
   ],
   imports: [
     CommonModule,
@@ -71,7 +83,11 @@ const route:Routes=[
     FormsModule,
     MaterialModule,
     SharedModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarouselModule.forRoot()
+  ],
+  providers: [
+    { provide: CarouselConfig, useValue: { interval: 1500, noPause: true, showIndicators: true } }
   ]
 })
 export class UserModule { }

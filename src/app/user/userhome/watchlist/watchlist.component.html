@@ -1,5 +1,5 @@
 <h1 style="text-align: center; margin-top: 1rem;">Hi {{user.username}}, Your Watchlist</h1>
 <div class="cont">
 <h3 *ngIf="isEmpty()" style="margin-top: 5rem;">Your Watchlist is empty!!!</h3>
-<app-watchlistbox *ngFor="let x of movies|fav:ufav" [movie]="x"></app-watchlistbox>
+<app-watchlistbox *ngFor="let x of movies|fav:ufav" [movie]="x" (ngOnInit)="ngOnInit()"></app-watchlistbox>
 </div>

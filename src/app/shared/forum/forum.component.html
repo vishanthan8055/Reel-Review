@@ -11,12 +11,11 @@
 </div>
 <div class="panel">
     <div class="panel-body" id="bb">
-    <!-- Newsfeed Content -->
     <!--===================================================-->
-    <app-forumbox *ngFor="let x of forums" [forum]="x" [user]="user"></app-forumbox>
+    <!-- <p *ngFor="let x of forums">{{x.username}}</p> -->
+    <app-forumbox *ngFor="let x of forums" [forum]="x" [user]="user" (ngOnInit)="ngOnInit()"></app-forumbox>
     <!--===================================================-->
-    <!-- End Newsfeed Content -->
-
+    
     </div>
 </div>
 </div>

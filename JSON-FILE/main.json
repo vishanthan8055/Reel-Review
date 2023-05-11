@@ -1,24 +1,29 @@
 {
   "carousel": [
     {
+      "id": 1,
       "title": "Varisu",
       "image": "varisu.jpg"
     },
     {
-      "title": "Varisu",
-      "image": "varisu.jpg"
+      "id": 2,
+      "title": "Avengers",
+      "image": "avengers.jpg"
     },
     {
-      "title": "Varisu",
-      "image": "varisu.jpg"
+      "id": 3,
+      "title": "Naruto",
+      "image": "naruto.jpg"
     },
     {
-      "title": "Varisu",
-      "image": "varisu.jpg"
+      "id": 4,
+      "title": "Attack on Titan",
+      "image": "aot.jpg"
     },
     {
-      "title": "Varisu",
-      "image": "varisu.jpg"
+      "id": 5,
+      "title": "Death Note",
+      "image": "death.jpg"
     }
   ],
   "chat": [
@@ -54,6 +59,76 @@
           "message": "Sure vishanthan🌟🌟",
           "date": "08/05/2023",
           "pimg": "u1.png"
+        },
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "message": "Thank you admin",
+          "date": "09/05/2023",
+          "pimg": "u3.png"
+        },
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "message": "good afternoon",
+          "date": "09/05/2023",
+          "pimg": "u3.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Hii vishanthan",
+          "date": "/05/2023",
+          "pimg": "u4.png"
+        },
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "message": "Hii admin How are you??'🌟🌟🌟",
+          "date": "/05/2023",
+          "pimg": "u3.png"
+        },
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "message": "Are you there??\n",
+          "date": "/05/2023",
+          "pimg": "u3.png"
+        },
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "message": "Hello🌟🌟🌟",
+          "date": "11/05/2023",
+          "pimg": "u3.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Thank you",
+          "date": "11/05/2023",
+          "pimg": "u4.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Good afternoon vishanthan",
+          "date": "11/05/2023",
+          "pimg": "u4.png"
+        },
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "message": "good afternoon Admin",
+          "date": "11/05/2023",
+          "pimg": "u3.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Good afternoon vishanthan",
+          "date": "11/05/2023",
+          "pimg": "u4.png"
         }
       ]
     },
@@ -138,6 +213,97 @@
           "message": "Yes i got it now its working",
           "date": "08/05/2023",
           "pimg": "u2.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Okay charu😊😊",
+          "date": "11/05/2023",
+          "pimg": "u4.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "username": "Tharun",
+      "usertype": "user",
+      "messages": [
+        {
+          "username": "Tharun",
+          "usertype": "user",
+          "message": "Hi admin, Thanks for this wonderful website",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Thanks",
+          "date": "08/05/2023",
+          "pimg": "u1.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Thanks for your appreciation",
+          "date": "09/05/2023",
+          "pimg": "u1.png"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "username": "rakesh",
+      "usertype": "user",
+      "messages": [
+        {
+          "username": "rakesh",
+          "usertype": "user",
+          "message": "Hi admin, I want to connect with you",
+          "date": "11/05/2023",
+          "pimg": "u5.png"
+        },
+        {
+          "username": "rakesh",
+          "usertype": "user",
+          "message": "hello admin this a nice website",
+          "date": "11/05/2023",
+          "pimg": "u5.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Thank you rakesh💖💖💖",
+          "date": "11/05/2023",
+          "pimg": "u4.png"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "username": "chid",
+      "usertype": "user",
+      "messages": [
+        {
+          "username": "chid",
+          "usertype": "user",
+          "message": "Hi admin, I want to connect with you",
+          "date": "11/05/2023",
+          "pimg": "unknown.png"
+        },
+        {
+          "username": "chid",
+          "usertype": "user",
+          "message": "My doubt is this website is open to all right now??",
+          "date": "11/05/2023",
+          "pimg": "unknown.png"
+        },
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "message": "Hey chid, Thanks for contacting us🌟🌟",
+          "date": "11/05/2023",
+          "pimg": "u4.png"
         }
       ]
     }
@@ -283,12 +449,86 @@
       "id": 10
     },
     {
-      "username": "charumathi",
+      "username": "admin_1",
+      "usertype": "admin",
+      "comment": "He is alive. Do you think he will die without fulfilling the promise he made to his mother.\nThe promise that he made was that when he will die he should be the World's richest and most powerful man, but in the end of KGF 2 he was the richest man of India only.\n\nSo, In KGF 3 he will fulfil the promise that he made.\nSome reasons why Rocky bhai is alive:",
+      "date": "09/05/2023",
+      "replies": [
+        {
+          "username": "charumathi",
+          "usertype": "user",
+          "comment": "Horey💥💥💥💥💥💥💥💥",
+          "date": "09/05/2023"
+        },
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "comment": "hlkjlkduas",
+          "date": "09/05/2023"
+        },
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "comment": "true",
+          "date": "/05/2023"
+        }
+      ],
+      "id": 13
+    },
+    {
+      "username": "vishanthan",
       "usertype": "user",
-      "comment": "Good night all!!!",
-      "date": "08/05/2023",
+      "comment": "Good morning Guys. I heared that kgf movie teaser is released on youtube. Hope you have seen it. If anyone not seen it please see it. The teaser is great👌👌👌",
+      "date": "09/05/2023",
       "replies": [],
-      "id": 11
+      "id": 14
+    },
+    {
+      "username": "admin_1",
+      "usertype": "admin",
+      "comment": "Goodafternoon",
+      "date": "09/05/2023",
+      "replies": [],
+      "id": 15
+    },
+    {
+      "username": "admin_1",
+      "usertype": "admin",
+      "comment": "Good evening",
+      "date": "10/05/2023",
+      "replies": [
+        {
+          "username": "vishanthan",
+          "usertype": "user",
+          "comment": "Hello Admin",
+          "date": "10/05/2023"
+        }
+      ],
+      "id": 16
+    },
+    {
+      "username": "vishanthan",
+      "usertype": "user",
+      "comment": "Goof afternoon guys",
+      "date": "10/05/2023",
+      "replies": [],
+      "id": 17
+    },
+    {
+      "username": "rakesh",
+      "usertype": "user",
+      "comment": "Hello Guys I am new to this platform i am rakesh sharma from sathybama university chennai",
+      "date": "11/05/2023",
+      "replies": [],
+      "id": 18
+    },
+    {
+      "username": "chid",
+      "usertype": "user",
+      "comment": "Hey rakesh I am also a newbie here",
+      "date": "11/05/2023",
+      "replies": [],
+      "id": 19
     }
   ],
   "reviews": [
@@ -388,6 +628,33 @@
       "date": "06/05/2023",
       "review": "yeah😂😂😂",
       "id": 15
+    },
+    {
+      "username": "charumathi",
+      "title": "Dear Comrade",
+      "date": "09/05/2023",
+      "review": "Wanted second part",
+      "id": 16
+    },
+    {
+      "username": "vishanthan",
+      "title": "Naruto",
+      "date": "09/05/2023",
+      "id": 17
+    },
+    {
+      "username": "vishanthan",
+      "title": "Dear Comrade",
+      "date": "09/05/2023",
+      "review": "It will come  on  2025 i guess",
+      "id": 18
+    },
+    {
+      "username": "charumathi",
+      "title": "Avengers: Endgame",
+      "date": "09/05/2023",
+      "review": "True😒😒😒",
+      "id": 19
     }
   ],
   "users": [
@@ -402,14 +669,12 @@
       "gender": "male",
       "Phone": "9988776655",
       "City": "chennai",
-      "pimg": "u1.png",
+      "pimg": "u3.png",
       "watchlist": [
         "Naruto",
         "Dear Comrade",
-        "Varisu",
         "Avengers: Endgame",
-        "Rithick",
-        "Varisudu"
+        "Varisu"
       ],
       "id": 1
     },
@@ -429,7 +694,8 @@
         "Varisu",
         "Dear Comrade",
         "Avengers: Endgame",
-        "Varisudu"
+        "Varisudu",
+        "Attack on Titan"
       ],
       "id": 3
     },
@@ -444,13 +710,13 @@
       "gender": "",
       "Phone": "",
       "City": "",
-      "pimg": "u1.png",
+      "pimg": "u4.png",
       "id": 2
     },
     {
-      "email": "pppppp@gmail.com",
+      "email": "tharun@gmail.com",
       "password": "$2a$10$upCdlOMYMvO2T1/1Dj/IyuobDFLk0XlMinmYqwG5OUu/kvcZXKFX.",
-      "username": "pppppp",
+      "username": "Tharun",
       "type": "user",
       "firstname": "",
       "lastname": "",
@@ -468,46 +734,37 @@
       "id": 4
     },
     {
-      "email": "rrrr@gmail.com",
-      "password": "$2a$10$upCdlOMYMvO2T1/1Dj/IyuobDFLk0XlMinmYqwG5OUu/kvcZXKFX.",
-      "username": "rrrr",
-      "type": "admin",
-      "firstname": "",
-      "lastname": "",
-      "Age": "",
-      "gender": "",
-      "Phone": "",
-      "City": "",
-      "pimg": "u1.png",
+      "email": "rakesh@gmail.com",
+      "password": "$2a$10$gR790El1qrjOaol8p.XKsuTXimMX69qpM9TcBr8T0MXH/H81cKY4G",
+      "username": "rakesh",
+      "type": "user",
+      "firstname": "Rakesh",
+      "lastname": "sarma",
+      "Age": "22",
+      "gender": "male",
+      "watchlist": [
+        "Avengers: Endgame",
+        "Dear Comrade"
+      ],
+      "Phone": "9988776655",
+      "City": "chennai",
+      "pimg": "u5.png",
+      "id": 5
+    },
+    {
+      "email": "chid@gmail.com",
+      "password": "$2a$10$PxGuviQj59RXv7o32ColzO/RrGkosAQIn2nWf9hR7BYbjzUhdeyS6",
+      "username": "chid",
+      "type": "user",
+      "firstname": "Chid",
+      "lastname": "anandh",
+      "Age": "22",
+      "gender": "male",
+      "watchlist": [],
+      "Phone": "9988776655",
+      "City": "chennai",
+      "pimg": "u3.png",
       "id": 6
-    },
-    {
-      "email": "deev@gmail.com",
-      "password": "$2a$10$E7hkhvsxSjD31GuZEEhW/.7KKh6Tr2VVSGORDF9miUzCvMOV.V2nS",
-      "username": "deev",
-      "type": "user",
-      "firstname": "",
-      "lastname": "",
-      "Age": "",
-      "gender": "",
-      "Phone": "",
-      "City": "",
-      "pimg": "u2.png",
-      "id": 7
-    },
-    {
-      "email": "sanju@gmail.com",
-      "password": "$2a$10$xXVK7nwFnvZoQnX12wZmUOZdh86qrTqywCCSV65ebNiWIGC9e.Bza",
-      "username": "sanjana@gmail.com",
-      "type": "user",
-      "firstname": "",
-      "lastname": "",
-      "Age": "",
-      "gender": "",
-      "Phone": "",
-      "City": "",
-      "pimg": "u2.png",
-      "id": 8
     }
   ],
   "movies": [
@@ -552,11 +809,12 @@
     },
     {
       "title": "Avengers: Endgame",
-      "language": "Tamil",
+      "language": "English",
       "genere": [
         "action",
         "drama",
-        "adventure"
+        "adventure",
+        ""
       ],
       "description": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
       "year": 2019,
@@ -572,10 +830,12 @@
     },
     {
       "title": "Varisudu",
-      "language": "Tamil",
+      "language": "French",
       "genere": [
         "action",
         "drama",
+        "",
+        "",
         ""
       ],
       "description": "Vijay Rajendran is a happy to-go lucky man. Things change when his father becomes terminally ill, and he is left to manage his business empire.",
@@ -592,10 +852,11 @@
     },
     {
       "title": "Death Note",
-      "language": "Tamil",
+      "language": "Japanese",
       "genere": [
         "Animation",
         "Crime",
+        "",
         "",
         ""
       ],
@@ -631,26 +892,6 @@
       "id": 10
     },
     {
-      "title": "Naruto",
-      "language": "Tamil",
-      "genere": [
-        "Animation",
-        "Action",
-        "Adventure"
-      ],
-      "description": "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
-      "year": "2002",
-      "imdb_rating": "8.4",
-      "rank": "432",
-      "cast": "Naruto Uzumaki, Itachi uchiha, Sasuke uchiha, Kakashi hatake, shisui uchiha, Kagami uchiha, shikamaru nara, Sakura, Hinata Hyuga, Obito Uchiha, Madara Uchiha, Harshirama senju",
-      "directors": "Masashi Kishimoto",
-      "writers": "Masashi Kishimoto",
-      "aka": "The tale of naruto uzumaki",
-      "imbd_url": "https://www.imdb.com/title/tt0409591/",
-      "image": "naruto.jpg",
-      "id": 11
-    },
-    {
       "title": "Vishanthan",
       "language": "Tamil",
       "genere": [
@@ -668,64 +909,6 @@
       "imbd_url": "www.google.com",
       "image": "varisu.jpg",
       "id": 12
-    },
-    {
-      "title": "Charumathi",
-      "language": "telugu",
-      "genere": [
-        "Adventure",
-        "",
-        ""
-      ],
-      "description": "aabbbcccc",
-      "year": "2002",
-      "imdb_rating": "10",
-      "rank": "1",
-      "cast": "charu",
-      "directors": "charu",
-      "writers": "charu",
-      "aka": "charu",
-      "imdb_url": "https://imdb.com/title/tt11998558",
-      "image": "death.jpg",
-      "id": 13
-    },
-    {
-      "title": "bot",
-      "language": "japanese",
-      "genere": [
-        "animation",
-        ""
-      ],
-      "description": "aaaaaaannnnn",
-      "year": "2015",
-      "imdb_rating": "10",
-      "rank": "43",
-      "cast": "eren",
-      "directors": "yaeger",
-      "writers": "naruto",
-      "aka": "bott",
-      "imdb_url": "www.instagram.com",
-      "image": "aot.jpg",
-      "id": 14
-    },
-    {
-      "title": "Rithick",
-      "language": "tamil",
-      "genere": [
-        "action",
-        "comedy"
-      ],
-      "description": "kjhkjjhlkhjhj",
-      "year": "2002",
-      "imdb_rating": "9.5",
-      "rank": "100",
-      "cast": "rithick",
-      "directors": "rithick",
-      "writers": "vishanthan",
-      "aka": "ritu",
-      "imdb_url": "www.google.com",
-      "image": "naruto.jpg",
-      "id": 15
     }
   ]
 }

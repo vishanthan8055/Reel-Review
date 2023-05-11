@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ForumService } from '../services/forum.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forum',
@@ -11,8 +12,14 @@ export class ForumComponent {
 forums:any;
 uforum:any;
 ureplies=[];
-constructor(private fs:ForumService){
+constructor(private fs:ForumService,private r:Router){
   fs.getForums().subscribe({
+    next:(data:any)=>this.forums=data,
+    error:()=>this.forums=[]
+  })
+}
+ngOnInit(){
+  this.fs.getForums().subscribe({
     next:(data:any)=>this.forums=data,
     error:()=>this.forums=[]
   })
@@ -27,9 +34,15 @@ getDate(){
   if(dd<10){
     ds='0'+dd
   }
+  else{
+    ds=""+dd;
+  }
   if(mm<10)
   {
     ms='0'+mm
+  }
+  else{
+    ms=""+mm
   }
   return ds+'/'+ms+'/'+yyyy;
 
@@ -45,8 +58,7 @@ onSub(){
   }
   this.fs.postForums(obj).subscribe({
     next:()=>{
-      alert("Successfully Commented on forum");
-      window.location.reload();
+      this.ngOnInit();
   },
     error:()=>alert("Posting comments failed")
   })

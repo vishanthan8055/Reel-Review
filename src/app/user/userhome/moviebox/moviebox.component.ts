@@ -19,7 +19,12 @@ export class MovieboxComponent {
     })
    }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.uid=localStorage.getItem("id")
+    this.us.getUsersbyId(this.uid).subscribe({
+      next:(data:any)=>this.user=data,
+      error:()=>this.user=[]
+    })
   }
 
   onAdd(){
@@ -29,11 +34,13 @@ export class MovieboxComponent {
     else{
       this.user.watchlist.push(this.movie.title);
       this.us.updateUsers({"watchlist":this.user.watchlist},this.uid).subscribe({
-        next:()=>alert(this.movie.title+" is successfully added to favorites!!!"),
+        next:()=>{
+          alert(this.movie.title+" is successfully added to favorites!!!")
+          this.ngOnInit()
+        },
         error:()=>alert("Error on adding to favorites...")
       });
     }
-    location.reload();
   }
 
   changeRoute(){

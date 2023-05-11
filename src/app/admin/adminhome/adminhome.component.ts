@@ -16,6 +16,8 @@ export interface State {
 export class AdminhomeComponent {
   name="";
   nameS="";
+  selected="All";
+  languages=["All","English","Tamil","Japanese","French","Russian"]
   stateCtrl = new FormControl('');
   filteredStates: Observable<State[]> | undefined;
   states:State[] = [
@@ -46,6 +48,30 @@ export class AdminhomeComponent {
     );
   
    }
+
+   ngOnInit(){
+    this.ms.getMovies().subscribe( {
+      next: (data:any)=>{this.movies = data;
+        this.movies=data;
+          for(let x of this.movies){
+            // let flag = x.image;
+            // let name = x.title;
+            let a:State = {
+              flag: "http://localhost/movies/"+x.image,
+              name: x.title,
+              population: "1m"
+            }
+            this.states.push(a);
+          }
+      },
+      error: ()=> this.movies = []
+     }
+     )
+     this.filteredStates = this.stateCtrl.valueChanges.pipe(
+      startWith(''),
+      map(state => (state ? this._filterStates(state) : this.states.slice())),
+    );
+  }
    onSearch(){
     this.nameS = this.name;
    }

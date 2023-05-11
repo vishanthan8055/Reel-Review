@@ -16,12 +16,12 @@
                 <div class="ibox-title">
                      Chat room panel
                 </div>
-                <div class="ibox-content">
+                <div class="ibox-content" *ngIf="!newchat || isAdmin()">
                     <div class="row">
                         <div class="col-md-9 ">
                             <div class="chat-discussion">
 
-                                <app-cbox *ngFor="let x of m" [message]="x"></app-cbox>
+                                <app-cbox *ngFor="let x of m.slice().reverse()" [message]="x"></app-cbox>
                                 
                             </div>
                         </div>
@@ -29,9 +29,9 @@
                             <div class="chat-users">
                                 <div class="users-list">
                                     <div class="chat-user" *ngFor="let u of chats">
-                                        <img class="chat-avatar" src="http://localhost/users/u1.png" alt="">
+                                        <img class="chat-avatar" src="http://localhost/users/{{getImg(u.username)}}" alt="">
                                         <div class="chat-user-name">
-                                            <button (click)="un(u.id)">{{u.username}}</button>
+                                            <a (click)="un(u.id)" style="cursor: pointer;">{{u.username}}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -51,6 +51,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="nc" *ngIf="newchat && !isAdmin()">
+                    <h1>Start connect with Admin</h1>
+                    <button (click)="onChat()" class="btn btn-dark">Connect Admin</button>
                 </div>
             </div>
         </div>

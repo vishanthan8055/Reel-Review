@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ChatService } from '../services/chat.service';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-chats',
@@ -12,12 +13,27 @@ export class ChatsComponent {
   mes="";
   chats:any;
   uid="1";
-  constructor(private cs:ChatService){
+  users:any;
+  eid:any[]=[];
+  newchat = true;
+  constructor(private cs:ChatService,private us:UserService){
+    us.getUsers().subscribe({
+      next:(data:any)=>{
+        this.users = data  
+      },
+      error:()=>this.users = []
+    })
     cs.getChats().subscribe({
-      next:(data:any)=>this.chats = data,
+      next:(data:any)=>{
+        this.chats = data;
+        for(let x of data){
+          if(x.id ==localStorage.getItem("id")){
+            this.newchat = false;
+          }
+        }
+      },
       error:()=>this.chats = []
     })
-
     if(localStorage.getItem("usertype")!="admin"){
       cs.getChatsbyId(localStorage.getItem("id")).subscribe({
         next:(data:any)=>{
@@ -25,7 +41,7 @@ export class ChatsComponent {
             this.m.push(x)
           }
         },
-        error:()=>alert("error")
+        error:()=>{this.m=[]}
       })
     }
     else{
@@ -37,6 +53,13 @@ export class ChatsComponent {
         },
         error:()=>alert("error")
       })
+    }
+  }
+  getImg(userName:string){
+    for(let x of this.users){
+      if(x.username==userName){
+        return x.pimg;
+      }
     }
   }
   isAdmin(){
@@ -59,6 +82,67 @@ export class ChatsComponent {
       })
       
   }
+  ngOnInit(){
+    this.us.getUsers().subscribe({
+      next:(data:any)=>{
+        this.users = data  
+      },
+      error:()=>this.users = []
+    })
+    this.cs.getChats().subscribe({
+      next:(data:any)=>{
+        this.chats = data;
+        for(let x of data){
+          if(x.id ==localStorage.getItem("id")){
+            this.newchat = false;
+          }
+        }
+      },
+      error:()=>this.chats = []
+    })
+    if(localStorage.getItem("usertype")!="admin"){
+      this.cs.getChatsbyId(localStorage.getItem("id")).subscribe({
+        next:(data:any)=>{
+          for(let x of data.messages){
+            this.m.push(x)
+          }
+        },
+        error:()=>{this.m=[]}
+      })
+    }
+    else{
+      this.cs.getChatsbyId(this.uid).subscribe({
+        next:(data:any)=>{
+          for(let x of data.messages){
+            this.m.push(x)
+          }
+        },
+        error:()=>alert("error")
+      })
+    }
+  }
+  onChat(){
+    let obj = {
+      "id": localStorage.getItem("id"),
+      "username": localStorage.getItem("username"),
+      "usertype": localStorage.getItem("usertype"),
+      "messages": [
+        {
+          "username": localStorage.getItem("username"),
+          "usertype": localStorage.getItem("usertype"),
+          "message": "Hi admin, I want to connect with you",
+          "date": this.getDate(),
+          "pimg": localStorage.getItem("pimg")
+        },
+      ]
+    }
+    this.cs.postChats(obj).subscribe({
+      next:()=>{this.ngOnInit()},
+      error:()=>{alert("error on posting")},
+    })
+    this.newchat = false;
+
+  }
   getDate(){
     var today = new Date();
     var dd = today.getDate();
@@ -69,9 +153,15 @@ export class ChatsComponent {
     if(dd<10){
       ds='0'+dd
     }
+    else{
+      ds=""+dd
+    }
     if(mm<10)
     {
       ms='0'+mm
+    }
+    else{
+      ms=""+mm
     }
     return ds+'/'+ms+'/'+yyyy;
   
@@ -101,6 +191,7 @@ export class ChatsComponent {
       "pimg": localStorage.getItem("pimg")
     }
     this.m.push(obj);
+    
     this.cs.updateChats({"messages":this.m},localStorage.getItem("id")).subscribe({
       next:()=>{let a = ""},
       error:()=>alert("Failed to post"),

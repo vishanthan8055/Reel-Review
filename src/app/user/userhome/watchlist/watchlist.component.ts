@@ -27,6 +27,20 @@ export class WatchlistComponent {
      })
      
 }
+ngOnInit(){
+  this.ms.getMovies().subscribe( {
+    next: (data:any)=>this.movies = data,
+    error: ()=> this.movies = []
+   })
+   this.uid=localStorage.getItem("id")
+   this.us.getUsersbyId(this.uid).subscribe({
+     next:(data:any)=>{
+      this.user=data;
+      this.ufav=this.user.watchlist;
+    },
+     error:()=>this.user={}
+   })
+}
 isEmpty(){
   if(this.ufav.length === 0){
     return true;
