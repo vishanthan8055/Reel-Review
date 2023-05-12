@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { LoginoutService } from '../services/loginout.service';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-login',
@@ -21,8 +22,14 @@ export class LoginComponent {
   rstatus:boolean=false
 
   logform:boolean=true;
-
-  constructor(private log:LoginoutService,private route:Router) { }
+  lang:any="tamil";
+  languages:any=[
+    {name:"English",value:"english"},
+    {name:"Tamil",value:"tamil"},
+  ]
+  constructor(private log:LoginoutService,private route:Router,private ts:TranslateService) {
+    ts.use(this.lang)
+   }
 
   ngOnInit(): void {
   }

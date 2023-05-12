@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ForumService } from '../services/forum.service';
 import { Router } from '@angular/router';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-forum',
@@ -12,17 +13,24 @@ export class ForumComponent {
 forums:any;
 uforum:any;
 ureplies=[];
-constructor(private fs:ForumService,private r:Router){
+forumform:any;
+constructor(private fs:ForumService,private r:Router,private fb:FormBuilder){
   fs.getForums().subscribe({
     next:(data:any)=>this.forums=data,
     error:()=>this.forums=[]
   })
+  this.forumform = this.fb.group({
+    fuforum:['',[Validators.required,Validators.minLength(5)]],
+  });
 }
 ngOnInit(){
   this.fs.getForums().subscribe({
     next:(data:any)=>this.forums=data,
     error:()=>this.forums=[]
   })
+  this.forumform = this.fb.group({
+    fuforum:['',[Validators.required,Validators.minLength(5)]],
+  });
 }
 getDate(){
   var today = new Date();
@@ -52,7 +60,7 @@ onSub(){
   let obj = {
     "username":this.user.username,
     "usertype":this.user.type,
-    "comment":this.uforum,
+    "comment":this.forumform.value.fuforum,
     "date":this.getDate(),
     "replies":[]
   }

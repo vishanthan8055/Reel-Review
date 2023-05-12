@@ -2,12 +2,18 @@
 <div class="container bootdey">
 <div class="col-md-12 bootstrap snippets">
 <div class="panel">
+  <form  [formGroup]="forumform"  (submit)="onSub()">
   <div class="panel-body">
-    <textarea class="form-control" rows="2" placeholder="What are you thinking?" [(ngModel)]="uforum" [ngModelOptions]="{standalone: true}"></textarea>
+    <textarea class="form-control" rows="2" placeholder="What are you thinking?" formControlName="fuforum"></textarea>
+    <div style="color: red; margin-top: 1rem;" *ngIf='forumform.controls.fuforum.hasError("required")'>
+      * Should be filled</div>
+    <div style="color: red; margin-top: 1rem;" *ngIf='forumform.controls.fuforum.hasError("minlength")'>
+         * Atleast Five Characters long</div>
     <div class="mar-top clearfix">
-      <button (click)="onSub()" class="btn btn-sm btn-dark pull-right" type="submit"><i class="fa fa-pencil fa-fw"></i> Share</button>
+      <button class="btn btn-sm btn-dark pull-right" type="submit"><i class="fa fa-pencil fa-fw"></i> Share</button>
     </div>
   </div>
+  </form>
 </div>
 <div class="panel">
     <div class="panel-body" id="bb">
