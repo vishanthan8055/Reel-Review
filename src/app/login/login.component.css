@@ -7,8 +7,18 @@
 *{
     background-color: mistyrose;
 } */
+.vis{
+    background-image: url("http://localhost/bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y: -2.8rem;
+}
 .errors{
     color: red;
+}
+.tre{
+    display: flex;
+    justify-content:space-between ;
 }
 .ff{
     display: flex;

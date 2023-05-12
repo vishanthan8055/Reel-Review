@@ -22,10 +22,13 @@ export class LoginComponent {
   rstatus:boolean=false
 
   logform:boolean=true;
-  lang:any="tamil";
+  lang:any="english";
   languages:any=[
     {name:"English",value:"english"},
     {name:"Tamil",value:"tamil"},
+    {name:"Japanese",value:"japanese"},
+    {name:"Hindi",value:"hindi"},
+    {name:"Telugu",value:"telugu"},
   ]
   constructor(private log:LoginoutService,private route:Router,private ts:TranslateService) {
     ts.use(this.lang)
@@ -33,6 +36,9 @@ export class LoginComponent {
 
   ngOnInit(): void {
   }
+  changeLang():void{
+    this.ts.use(this.lang)
+ }
 
 
   toggle(){

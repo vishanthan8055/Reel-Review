@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ChatService } from 'src/app/shared/services/chat.service';
 import { UserService } from 'src/app/shared/services/user.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { UserService } from 'src/app/shared/services/user.service';
 export class UserBoxComponent {
 @Input() user:any;
 @Output("ngOnInit") ngOnInit: EventEmitter<any> = new EventEmitter();
-constructor(private us:UserService,private route:ActivatedRoute,private router:Router){
+constructor(private us:UserService,private route:ActivatedRoute,private router:Router,private cs:ChatService){
   
 }
 changeRoute(){
@@ -31,6 +32,12 @@ delUser(){
       this.ngOnInit.emit();
     },
     error:()=>alert("Failed to delete user")
+  })
+  this.cs.deleteChats(this.user.id).subscribe({
+    next:()=>{
+      this.ngOnInit.emit();
+    },
+    error:()=>alert("Failed to delete user chat")
   })
 }
 }

@@ -12,6 +12,7 @@ export class ForumboxComponent {
 @Input() user:any;
 @Output("ngOnInit") ngOnInit: EventEmitter<any> = new EventEmitter();
 users:any[]=[];
+uns:any[]=[];
 rforum:any;
 isReply=false;
 pp="";
@@ -21,9 +22,14 @@ constructor(private fs:ForumService,private us:UserService){
     next:(data:any)=>{
       this.users=data;
       for(let x of data){
+        this.uns.push(x.username)
         if(x.username==this.forum.username){
           this.pp = x.pimg
         }
+      }
+      if(!this.uns.includes(this.forum.username)){
+        this.forum.username = "Deleted User";
+        this.pp = "unknown.png"
       }
 
     },

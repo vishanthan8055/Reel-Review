@@ -1,5 +1,14 @@
 {
     "menubar": {
-    "WELCOME":"Welcome"
+    "WELCOME":"WELCOME TO REEL REVIEW",
+    "sign_in":"Sign in",
+    "or":"Or using form below",
+    "no":"No account? Sign up",
+    "Email":"Email",
+    "Password":"Password",
+    "Reg":"Registration takes less than a minute but gives you full control over your orders.",
+    "Username":"Username",
+    "Cpass":"Confirm Password",
+    "Sign_up":"Sign Up"
     }
 }

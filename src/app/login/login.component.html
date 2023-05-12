@@ -1,77 +1,80 @@
-
+<div class="vis">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <div class="ff">
 <div class="loading" *ngIf="status"><img src="http://localhost/images/loading.gif"></div>
 <div class="container pb-5 mb-sm-4">
-<h1 style="text-align: center;">WELCOME TO REEL REVIEW</h1>
-<h1>{{"menubar.WELCOME"|translate}}</h1>
+<h1 style="text-align: center;font-weight: bolder;">{{"menubar.WELCOME"|translate}}</h1>
     <div class="row pt-5">
         <div class="col-md-6 pt-sm-3">
             <div class="card">
                 <div class="card-body">
-                    <h2 class="h4 mb-1">Sign in</h2>
+                    <div class="tre">
+                    <h2 class="h4 mb-1">{{"menubar.sign_in"|translate}}</h2>
+                    <select name="lang" [(ngModel)]="lang" [ngModelOptions]="{standalone: true}" (change)="changeLang()">
+                        <option *ngFor="let x of languages" value={{x.value}}>{{x.name}}</option>
+                    </select>
+                    </div>
                     <hr>
-                    <h3 class="h6 font-weight-semibold opacity-70 pt-4 pb-2">Or using form below</h3>
+                    <h3 class="h6 font-weight-semibold opacity-70 pt-4 pb-2">{{"menubar.or"|translate}}</h3>
                     <form class="needs-validation">
                         <div class="input-group form-group">
                             <div class="input-group-prepend"><span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span></div>
-                            <input class="form-control" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" type="email" placeholder="Email" required="">
-                            <div class="invalid-feedback">Please enter valid email address!</div>
+                            <input class="form-control" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" type="email" placeholder='{{"menubar.Email"|translate}}' required="">
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend"><span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span></div>
-                            <input class="form-control" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" type="password" placeholder="Password" required="">
-                            <div class="invalid-feedback">Please enter valid password!</div>
+                            <input class="form-control" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" type="password" placeholder='{{"menubar.Password"|translate}}' required="">
                         </div>
                         <hr class="mt-4">
                     <div class="errors">{{error}}</div>
                         <hr class="mt-4">
                         <div class="text-right pt-4">
-                            <button class="btn btn-dark" (click)="login()" type="submit">Sign In</button>
+                            <button class="btn btn-dark" (click)="login()" type="submit">{{"menubar.sign_in"|translate}}</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
         <div class="col-md-6 pt-5 pt-sm-3">
-            <h2 class="h4 mb-3">No account? Sign up</h2>
-            <p class="text-muted mb-4">Registration takes less than a minute but gives you full control over your orders.</p>
+            <h2 class="h4 mb-3">{{"menubar.no"|translate}}</h2>
+            <p class="text-muted mb-4">{{"menubar.Reg"|translate}}</p>
             <form class="needs-validation" novalidate="">
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="reg-fn">Username</label>
+                            <label for="reg-fn">{{"menubar.Username"|translate}}</label>
                             <input class="form-control" [(ngModel)]="rusername" [ngModelOptions]="{standalone: true}" type="text" required="" id="reg-fn">
                             <div class="invalid-feedback">Please enter your first name!</div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="reg-email">E-mail Address</label>
+                            <label for="reg-email">{{"menubar.Email"|translate}}</label>
                             <input class="form-control" [(ngModel)]="remail" [ngModelOptions]="{standalone: true}" type="email" required="" id="reg-email">
                             <div class="invalid-feedback">Please enter valid email address!</div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="reg-password">Password</label>
+                            <label for="reg-password">{{"menubar.Password"|translate}}</label>
                             <input class="form-control" [(ngModel)]="rpassword" [ngModelOptions]="{standalone: true}" type="password" required="" id="reg-password">
                             <div class="invalid-feedback">Please enter password!</div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="reg-password-confirm">Confirm Password</label>
+                            <label for="reg-password-confirm">{{"menubar.Cpass"|translate}}</label>
                             <input class="form-control" [(ngModel)]="vpassword" [ngModelOptions]="{standalone: true}" type="password" required="" id="reg-password-confirm">
                             <div class="invalid-feedback">Passwords do not match!</div>
                         </div>
                     </div>
                 </div>
                 <div class="text-right">
-                    <button class="btn btn-dark reg" (click)="register()" type="submit">Sign Up</button>
+                    <button class="btn btn-dark reg" (click)="register()" type="submit">{{"menubar.Sign_up"|translate}}</button>
                 </div>
             </form>
         </div>
     </div>
+</div>
 </div>
 </div>
