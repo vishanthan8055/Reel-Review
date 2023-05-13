@@ -350,3 +350,7 @@ hr {
     width: 79.8rem;
     height: 20rem;
 }
+.rvs{
+	display: flex;
+	flex-direction: column-reverse;
+}

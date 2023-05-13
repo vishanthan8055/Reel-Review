@@ -22,6 +22,12 @@ export class DetailsComponent implements OnInit {
     
     
   }
+  getReviews(){
+    this.rs.getReviews().subscribe({
+      next:(data:any)=>this.reviews = data,
+      error:()=>this.reviews=[]
+    })
+  }
   ngOnInit(): void {
   }
   getPimg(){
@@ -37,9 +43,15 @@ export class DetailsComponent implements OnInit {
     if(dd<10){
       ds='0'+dd
     }
+    else{
+      ds=''+dd
+    }
     if(mm<10)
     {
       ms='0'+mm
+    }
+    else{
+      ms=''+mm
     }
     return ds+'/'+ms+'/'+yyyy;
 
@@ -55,10 +67,13 @@ export class DetailsComponent implements OnInit {
       "review":this.ur
     }
     this.rs.postReviews(obj).subscribe({
-      next:()=>alert("Successfully Posted!!!"),
+      next:()=>{
+        this.getReviews();
+        this.ur = ""
+      },
       error:()=>alert("Posting Failed:(")
     })
-    window.location.reload();
+    // window.location.reload();
   
 }
 }

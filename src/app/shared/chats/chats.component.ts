@@ -83,6 +83,11 @@ export class ChatsComponent {
       
   }
   ngOnInit(){
+    // setInterval(()=>this.getChats(),5000)
+    this.getChats()
+  }
+  getChats(){
+    this.m=[]
     this.us.getUsers().subscribe({
       next:(data:any)=>{
         this.users = data  

@@ -30,7 +30,8 @@ export class MenuBarComponent {
 navigate(url:string){
     
   if(url=="")
-  window.location.reload()
+  this.router.navigate(["./"+url], {relativeTo:this.route});
+  // window.location.reload()
   else
   this.router.navigate([url], {relativeTo:this.route});
 }
