@@ -22,7 +22,6 @@ export class EditpComponent {
   constructor(private us:UserService){
     us.getUsersbyId(localStorage.getItem("id")).subscribe({
       next:(data:any)=>{
-        alert(data)
         this.user.email=data.email;
         this.user.username=data.username;
         this.user.type=data.type;

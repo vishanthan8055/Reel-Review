@@ -1680,6 +1680,21 @@
       "date": "13/05/2023",
       "replies": [],
       "id": 23
+    },
+    {
+      "username": "vishanthan",
+      "usertype": "user",
+      "comment": "He is alive. Do you think he will die without fulfilling the promise he made to his mother. The promise that he made was that when he will die he should be the World's richest and most powerful man, but in the end of KGF 2 he was the richest man of India only. So, In KGF 3 he will fulfil the promise that he made. Some reasons why Rocky bhai is alive.",
+      "date": "15/05/2023",
+      "replies": [
+        {
+          "username": "admin_1",
+          "usertype": "admin",
+          "comment": "Hii vishanthan",
+          "date": "28/06/2023"
+        }
+      ],
+      "id": 24
     }
   ],
   "reviews": [
@@ -1839,7 +1854,8 @@
         "Naruto",
         "Dear Comrade",
         "Avengers: Endgame",
-        "Varisu"
+        "Varisu",
+        "Death Note"
       ],
       "id": 1
     },
